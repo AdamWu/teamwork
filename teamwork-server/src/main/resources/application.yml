@@ -10,7 +10,7 @@ mproject:
   demoEnabled: true
   # 文件路径 示例（ Windows配置D:/mproject/uploadPath，Linux配置 /home/mproject/uploadPath）
   #profile: /home/mproject/uploadPath
-  profile: D:/mproject/uploadPath
+  profile: D:/teamwork/uploadPath
   
   # 获取ip地址开关
   addressEnabled: true
@@ -19,10 +19,10 @@ mproject:
 
   staticUpload: /static/upload/**
 
-  uploadFolderPath: D:/idea-workspace/mproject/static/upload/
-  #uploadFolderPath: home/mproject/static/upload/
+  #uploadFolderPath: D:/idea-workspace/mproject/static/upload/
+  uploadFolderPath: home/mproject/static/upload/
 
-  imgServer: http://122.112.164.217:8888/teamProject/
+  #imgServer: http://122.112.164.217:8888/teamProject/
   #用户默认图标
   userImg: user.jpg
   #项目默认图标
@@ -30,12 +30,12 @@ mproject:
 
 
   #downloadServer: http://120.27.62.173:8888
-  downloadServer: http://122.112.164.217:8888
+  downloadServer: http://127.0.0.1:8881
 
 # 开发环境配置
 server:
   # 服务器的HTTP端口，默认为80
-  port: 8888
+  port: 8881
 #  servlet:
 #    # 应用的访问路径
 #    context-path: /api/
@@ -94,9 +94,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     druid:
       #url: jdbc:mysql://139.199.229.215:3306/teamwork?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&tinyInt1isBit=false
-      url: jdbc:mysql://122.112.164.217:3306/teamwork?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&tinyInt1isBit=false
-      username: teamwork
-      password: Admin@123!
+      url: jdbc:mysql://localhost:3306/teamwork?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&tinyInt1isBit=false
+      username: root
+      password: 120688wuyunze
       #password: P@ssWord8.0
   #Redis
   redis:
@@ -105,7 +105,7 @@ spring:
     # 端口，默认为6379
     port: 6379
     # 密码
-    password: fZxm2gSUeR9VfXzZlk9GemUw2
+    password:
     # 连接超时时间
     timeout: 10s
     lettuce:

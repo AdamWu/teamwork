@@ -189,8 +189,8 @@ public class TaskService   extends ServiceImpl<TaskMapper, Task> {
                         executorMap = new HashMap();
                         executorMap.put("name",member.getName());
                         executorMap.put("avatar",member.getAvatar());
-                        map.put("executor",executor);
-                        taskMemberMap.put(assign_to,executorMap);
+                        map.put("executor",executorMap);
+                        //taskMemberMap.put(assign_to,executorMap);
                     }
                 }
                 map = buildTaskMap(map,UserUtil.getLoginUser().getUser().getCode());

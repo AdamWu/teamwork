@@ -237,15 +237,15 @@ CREATE TABLE `team_member`  (
 -- ----------------------------
 -- Records of team_member
 -- ----------------------------
-INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '18681140825', 'juli', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8888/common/image?filePathName=/member/avatar/6v7be19pwman2fird04gqu53/20200709/17c8573b917c4b45a1cb61588522780d-project.png&realFileName=project.png', '', 0, 0, 0, NULL, '', '123@qq.com', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (646, 'zhangyi', '14e1b600b1fd579f47433b88e8d85291', '张一', '13399944031', NULL, '2020-07-06 10:50:59', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '322323@qq.com', 'bddc79203627409e9928b290b952ee88', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (647, 'wangwei', '14e1b600b1fd579f47433b88e8d85291', '王伟', '13399944032', NULL, '2020-07-06 10:51:00', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '3332324@qq.com', '6d44c444965349ae926cd5be98912292', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (648, 'lichao', '14e1b600b1fd579f47433b88e8d85291', '李超', '13399944033', NULL, '2020-07-06 10:51:01', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '4422325@qq.com', 'e9b4bbe96f04474599c9f014ea1f47e7', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (649, 'lijie', '14e1b600b1fd579f47433b88e8d85291', '李杰', '13399944034', NULL, '2020-07-06 10:51:02', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '522326@qq.com', '8e0310d06f904f0bbaf3b1ba1fc06620', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (650, 'songfei', '14e1b600b1fd579f47433b88e8d85291', '宋飞', '13399944035', NULL, '2020-07-06 10:51:02', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '622327@qq.com', '5cddde5b22ed421fabfe32adb6b7ca07', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (651, 'hanzhongwei', '14e1b600b1fd579f47433b88e8d85291', '韩钟伟', '13399944036', NULL, '2020-07-06 10:51:03', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '722328@qq.com', '7dac6850d3224e12a5040150ecb09122', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (652, 'yangkai', '14e1b600b1fd579f47433b88e8d85291', '杨凯', '13399944037', NULL, '2020-07-06 10:51:04', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '888888888@qq.com', '386cd8152dab48ada28bea04058abc96', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (653, 'wuzhong', '14e1b600b1fd579f47433b88e8d85291', '吴忠', '13399944038', NULL, '2020-07-06 10:51:05', 1, NULL, '', 'http://120.27.62.173:8888/common/image?filePathName=/defaultimg/user.jpg', NULL, 0, 0, 0, NULL, '', '000000@qq.com', '1355fa40b3714a5ea5ed127953f79a9f', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '18681140825', 'juli', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', '', 0, 0, 0, NULL, '', '123@qq.com', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (646, 'zhangyi', '14e1b600b1fd579f47433b88e8d85291', '张一', '13399944031', NULL, '2020-07-06 10:50:59', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '322323@qq.com', 'bddc79203627409e9928b290b952ee88', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (647, 'wangwei', '14e1b600b1fd579f47433b88e8d85291', '王伟', '13399944032', NULL, '2020-07-06 10:51:00', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '3332324@qq.com', '6d44c444965349ae926cd5be98912292', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (648, 'lichao', '14e1b600b1fd579f47433b88e8d85291', '李超', '13399944033', NULL, '2020-07-06 10:51:01', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '4422325@qq.com', 'e9b4bbe96f04474599c9f014ea1f47e7', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (649, 'lijie', '14e1b600b1fd579f47433b88e8d85291', '李杰', '13399944034', NULL, '2020-07-06 10:51:02', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '522326@qq.com', '8e0310d06f904f0bbaf3b1ba1fc06620', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (650, 'songfei', '14e1b600b1fd579f47433b88e8d85291', '宋飞', '13399944035', NULL, '2020-07-06 10:51:02', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '622327@qq.com', '5cddde5b22ed421fabfe32adb6b7ca07', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (651, 'hanzhongwei', '14e1b600b1fd579f47433b88e8d85291', '韩钟伟', '13399944036', NULL, '2020-07-06 10:51:03', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '722328@qq.com', '7dac6850d3224e12a5040150ecb09122', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (652, 'yangkai', '14e1b600b1fd579f47433b88e8d85291', '杨凯', '13399944037', NULL, '2020-07-06 10:51:04', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '888888888@qq.com', '386cd8152dab48ada28bea04058abc96', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (653, 'wuzhong', '14e1b600b1fd579f47433b88e8d85291', '吴忠', '13399944038', NULL, '2020-07-06 10:51:05', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '000000@qq.com', '1355fa40b3714a5ea5ed127953f79a9f', NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for team_member_account
@@ -276,7 +276,7 @@ CREATE TABLE `team_member_account`  (
 -- ----------------------------
 -- Records of team_member_account
 -- ----------------------------
-INSERT INTO `team_member_account` VALUES (21, '6v7be19pwman2fird04gqu11', '6v7be19pwman2fird04gqu53', '6v7be19pwman2fird04gqu53', 'axr73ydzo5gemks0pl9qnt16', '3', 1, 'admin', '18681140825', '545522390@qq.com', '2019-01-05 21:57:01', NULL, 1, '描述12', 'http://127.0.0.1:8888/common/image?filePathName=/member/avatar/6v7be19pwman2fird04gqu53/20200709/17c8573b917c4b45a1cb61588522780d-project.png&realFileName=project.png', '资深工程师', '研发部');
+INSERT INTO `team_member_account` VALUES (21, '6v7be19pwman2fird04gqu11', '6v7be19pwman2fird04gqu53', '6v7be19pwman2fird04gqu53', 'axr73ydzo5gemks0pl9qnt16', '3', 1, 'admin', '18681140825', '545522390@qq.com', '2019-01-05 21:57:01', NULL, 1, '描述12', '', '资深工程师', '研发部');
 INSERT INTO `team_member_account` VALUES (135, 'd89ce978017342fdbc99d7dd591582c0', 'bddc79203627409e9928b290b952ee88', '6v7be19pwman2fird04gqu53', '', '101', 0, '张一', '13399944031', '322323@qq.com', '2020-07-06 10:51:00', NULL, 1, '', NULL, '主任', '');
 INSERT INTO `team_member_account` VALUES (136, '092cca04b25242df87f4fbbf25325be0', 'bddc79203627409e9928b290b952ee88', '2360f2f0f79447f4a2498ae06a9b132d', '', '100', 1, '张一', '13399944031', '322323@qq.com', '2020-07-06 10:51:00', NULL, 1, '', NULL, '资深工程师', '某某公司－某某某事业群－某某平台部－某某技术部－BM');
 INSERT INTO `team_member_account` VALUES (137, '7e410def98f24bd991f53560cd49c62c', '6d44c444965349ae926cd5be98912292', '6v7be19pwman2fird04gqu53', '', '103', 0, '王伟', '13399944032', '3332324@qq.com', '2020-07-06 10:51:01', NULL, 1, '', NULL, '科员', '');
@@ -319,10 +319,6 @@ CREATE TABLE `team_notify`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 4326 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '动态通知表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_notify
--- ----------------------------
-INSERT INTO `team_notify` VALUES (4325, 'admin', '指给王伟的任务', 'notice', '6v7be19pwman2fird04gqu53', '6d44c444965349ae926cd5be98912292', NULL, 0, NULL, 'project', NULL, NULL, 'task', 'project', 'system', 'http://127.0.0.1:8888/common/image?filePathName=/member/avatar/6v7be19pwman2fird04gqu53/20200709/17c8573b917c4b45a1cb61588522780d-project.png&realFileName=project.png', '0');
 
 -- ----------------------------
 -- Table structure for team_organization

@@ -94,7 +94,7 @@ public class DepartmentMemberService extends ServiceImpl<DepartmentMemberMapper,
         return new RowHandler() {
             @Override
             public void handle(int sheetIndex, int rowIndex, List<Object> rowlist) {
-                String downloadUrl = "/common/download?filePathName="+ MProjectConfig.getProfile()+"/"+userImg+"&realFileName="+userImg;
+                String downloadUrl = "/common/image?filePathName="+"/"+userImg+"&realFileName="+userImg;
                 if(rowIndex>=dataStartRow-1){
                     Member member = new Member();
                     member.setName(ListUtils.getValue(rowlist,0,String.class));
@@ -125,7 +125,7 @@ public class DepartmentMemberService extends ServiceImpl<DepartmentMemberMapper,
                         member.setDescription(ListUtils.getValue(rowlist,7,String.class));
                         member.setCode(CommUtils.getUUID());
                         member.setPassword(Md5Utils.hash(Md5Utils.hash(member.getPassword())));
-                        member.setAvatar(downloadUrl + downloadUrl);
+                        member.setAvatar(downloadServer + downloadUrl);
                         member.setAccount(account);member.setStatus(1);
                         member.setOrgCode(orgCode);
 

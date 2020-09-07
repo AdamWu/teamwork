@@ -864,8 +864,10 @@ public class ProjectController extends BaseController {
             put("app_version",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"app_version").one().getValue());
             put("site_copy",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"site_copy").one().getValue());
             put("site_name",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"site_name").one().getValue());
-            put("app_desc",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"app_desc").one().getValue());
-            put("app_title",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"app_title").one().getValue());
+            //put("app_desc",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"app_desc").one().getValue());
+            //put("app_title",systemConfigService.lambdaQuery().eq(SystemConfig::getName,"app_title").one().getValue());
+            put("app_title", "任务协同项目管理");
+            put("app_desc", "轻量级任务协作平台");
         }});
     }
  
