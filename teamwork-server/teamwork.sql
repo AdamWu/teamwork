@@ -183,10 +183,7 @@ CREATE TABLE `team_member`  (
 -- ----------------------------
 -- Records of team_member
 -- ----------------------------
-INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '18681140825', 'juli', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', '', 0, 0, 0, NULL, '', '123@qq.com', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (646, 'zhangyi', '14e1b600b1fd579f47433b88e8d85291', '张一', '13399944031', NULL, '2020-07-06 10:50:59', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '322323@qq.com', 'bddc79203627409e9928b290b952ee88', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (647, 'wangwei', '14e1b600b1fd579f47433b88e8d85291', '王伟', '13399944032', NULL, '2020-07-06 10:51:00', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '3332324@qq.com', '6d44c444965349ae926cd5be98912292', NULL, NULL, NULL);
-INSERT INTO `team_member` VALUES (648, 'lichao', '14e1b600b1fd579f47433b88e8d85291', '李超', '13399944033', NULL, '2020-07-06 10:51:01', 1, NULL, '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', NULL, 0, 0, 0, NULL, '', '4422325@qq.com', 'e9b4bbe96f04474599c9f014ea1f47e7', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '', '吴猛', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', '', 0, 0, 0, NULL, '', 'wmeng@autof.cn', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
 
 
 -- ----------------------------
@@ -219,12 +216,6 @@ CREATE TABLE `team_member_account`  (
 -- Records of team_member_account
 -- ----------------------------
 INSERT INTO `team_member_account` VALUES (21, '6v7be19pwman2fird04gqu11', '6v7be19pwman2fird04gqu53', '6v7be19pwman2fird04gqu53', '', '3', 1, 'admin', '18681140825', '545522390@qq.com', '2019-01-05 21:57:01', NULL, 1, '描述12', '', '资深工程师', '研发部');
-INSERT INTO `team_member_account` VALUES (135, 'd89ce978017342fdbc99d7dd591582c0', 'bddc79203627409e9928b290b952ee88', '6v7be19pwman2fird04gqu53', '', '101', 0, '张一', '13399944031', '322323@qq.com', '2020-07-06 10:51:00', NULL, 1, '', NULL, '主任', '');
-INSERT INTO `team_member_account` VALUES (136, '092cca04b25242df87f4fbbf25325be0', 'bddc79203627409e9928b290b952ee88', '2360f2f0f79447f4a2498ae06a9b132d', '', '100', 1, '张一', '13399944031', '322323@qq.com', '2020-07-06 10:51:00', NULL, 1, '', NULL, '资深工程师', '某某公司－某某某事业群－某某平台部－某某技术部－BM');
-INSERT INTO `team_member_account` VALUES (137, '7e410def98f24bd991f53560cd49c62c', '6d44c444965349ae926cd5be98912292', '6v7be19pwman2fird04gqu53', '', '103', 0, '王伟', '13399944032', '3332324@qq.com', '2020-07-06 10:51:01', NULL, 1, '', NULL, '科员', '');
-INSERT INTO `team_member_account` VALUES (138, 'f320c5aeca234b04a50db371ba571db5', '6d44c444965349ae926cd5be98912292', 'f7041ee86dbc4b4494fbf17607ac94ce', '', '102', 1, '王伟', '13399944032', '3332324@qq.com', '2020-07-06 10:51:01', NULL, 1, '', NULL, '资深工程师', '某某公司－某某某事业群－某某平台部－某某技术部－BM');
-INSERT INTO `team_member_account` VALUES (139, '83f18430f0774e54b47d7e90beb1da53', 'e9b4bbe96f04474599c9f014ea1f47e7', '6v7be19pwman2fird04gqu53', '', '105', 0, '李超', '13399944033', '4422325@qq.com', '2020-07-06 10:51:02', NULL, 1, '', NULL, '科员', '');
-INSERT INTO `team_member_account` VALUES (140, 'debcf5c0a5d841cc838d18ae2ff118bd', 'e9b4bbe96f04474599c9f014ea1f47e7', '47d5d113b44f44128cb79b1d4965c531', '', '104', 1, '李超', '13399944033', '4422325@qq.com', '2020-07-06 10:51:02', NULL, 1, '', NULL, '资深工程师', '某某公司－某某某事业群－某某平台部－某某技术部－BM');
 
 
 
@@ -315,11 +306,7 @@ CREATE TABLE `team_project`  (
   INDEX `project`(`order`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 13078 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '项目表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_project
--- ----------------------------
-INSERT INTO `team_project` VALUES (13074, '', '水利部水资源调研项目', '8c4f887129e54068996e2d10a1c3bac9', '', 'open', NULL, 0, 0, '', 33.33, '2020-07-06 10:22:43', '6v7be19pwman2fird04gqu53', NULL, 1, '123', 1, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
-INSERT INTO `team_project` VALUES (13077, '', '水利部1号项目', '3488bba47b8e48fc9cc75f5e5580cfb4', '', 'open', NULL, 0, 0, '', 78.00, '2020-07-06 17:07:26', '6v7be19pwman2fird04gqu53', NULL, 1, 'test', 1, 0, '', 1, 1, 'simple', '2020-07-07', '2020-08-31', 1);
+
 
 -- ----------------------------
 -- Table structure for team_project_auth
@@ -3972,14 +3959,6 @@ CREATE TABLE `team_project_member`  (
   UNIQUE INDEX `unique`(`project_code`, `member_code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 106 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '项目-成员表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_project_member
--- ----------------------------
-INSERT INTO `team_project_member` VALUES (95, '8c4f887129e54068996e2d10a1c3bac9', '6v7be19pwman2fird04gqu53', '2020-07-06 10:22:43', 1, NULL);
-INSERT INTO `team_project_member` VALUES (97, '8c4f887129e54068996e2d10a1c3bac9', '6d44c444965349ae926cd5be98912292', '2020-07-06 10:51:17', 0, NULL);
-INSERT INTO `team_project_member` VALUES (98, '8c4f887129e54068996e2d10a1c3bac9', 'e9b4bbe96f04474599c9f014ea1f47e7', '2020-07-06 10:51:18', 0, NULL);
-INSERT INTO `team_project_member` VALUES (103, '3488bba47b8e48fc9cc75f5e5580cfb4', '6v7be19pwman2fird04gqu53', '2020-07-06 17:07:26', 1, NULL);
-INSERT INTO `team_project_member` VALUES (105, '3488bba47b8e48fc9cc75f5e5580cfb4', '6d44c444965349ae926cd5be98912292', '2020-07-06 17:07:49', 0, NULL);
 
 -- ----------------------------
 -- Table structure for team_project_menu
@@ -4507,16 +4486,6 @@ CREATE TABLE `team_task_stages`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 216 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '任务列表表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_task_stages
--- ----------------------------
-INSERT INTO `team_task_stages` VALUES (204, '任务分组1', '8c4f887129e54068996e2d10a1c3bac9', 0, NULL, '2020-07-06 10:22:43', 'e558aeb440494ed2828368a1634f2c09', 0);
-INSERT INTO `team_task_stages` VALUES (205, '任务分组2', '8c4f887129e54068996e2d10a1c3bac9', 1, NULL, '2020-07-06 10:22:43', '0669fbf3380c486390f4edf8962cb7cf', 0);
-INSERT INTO `team_task_stages` VALUES (206, '任务分组3', '8c4f887129e54068996e2d10a1c3bac9', 2, NULL, '2020-07-06 10:22:43', '3d2b44fbf63f49498746469438f3971a', 0);
-INSERT INTO `team_task_stages` VALUES (213, '任务分组1', '3488bba47b8e48fc9cc75f5e5580cfb4', 0, NULL, '2020-07-06 17:07:26', '67553773f3c245c0abbd3a58ddbbe374', 0);
-INSERT INTO `team_task_stages` VALUES (214, '任务分组2', '3488bba47b8e48fc9cc75f5e5580cfb4', 1, NULL, '2020-07-06 17:07:26', '9efeaa61ef274457922a8a10b77e13f6', 0);
-INSERT INTO `team_task_stages` VALUES (215, '任务分组3', '3488bba47b8e48fc9cc75f5e5580cfb4', 2, NULL, '2020-07-06 17:07:26', 'e9c7e444dac549419f701aacc1947008', 0);
-INSERT INTO `team_task_stages` VALUES (216, '任务分组4', '3488bba47b8e48fc9cc75f5e5580cfb4', 3, NULL, '2020-07-06 17:07:26', 'c1eaf52db37c4ff0820e9128afc2a418', 0);
 
 -- ----------------------------
 -- Table structure for team_task_stages_template
