@@ -290,15 +290,7 @@ CREATE TABLE `team_organization`  (
 -- ----------------------------
 -- Records of team_organization
 -- ----------------------------
-INSERT INTO `team_organization` VALUES (1, 'admin个人项目', NULL, NULL, '6v7be19pwman2fird04gqu53', '2018-10-12', 1, '6v7be19pwman2fird04gqu53', '', 0, 0, 0);
-INSERT INTO `team_organization` VALUES (38, '张一的个人项目', NULL, NULL, 'bddc79203627409e9928b290b952ee88', '2020-07-06 10:50:59', 1, '2360f2f0f79447f4a2498ae06a9b132d', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (39, '王伟的个人项目', NULL, NULL, '6d44c444965349ae926cd5be98912292', '2020-07-06 10:51:00', 1, 'f7041ee86dbc4b4494fbf17607ac94ce', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (40, '李超的个人项目', NULL, NULL, 'e9b4bbe96f04474599c9f014ea1f47e7', '2020-07-06 10:51:01', 1, '47d5d113b44f44128cb79b1d4965c531', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (41, '李杰的个人项目', NULL, NULL, '8e0310d06f904f0bbaf3b1ba1fc06620', '2020-07-06 10:51:02', 1, '678e42846beb4b0493f0174ea95f7292', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (42, '宋飞的个人项目', NULL, NULL, '5cddde5b22ed421fabfe32adb6b7ca07', '2020-07-06 10:51:02', 1, 'df15fae11f7746238a879e2e67c1a62a', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (43, '韩钟伟的个人项目', NULL, NULL, '7dac6850d3224e12a5040150ecb09122', '2020-07-06 10:51:03', 1, '15750248caeb4f3cbb0d951f645f922d', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (44, '杨凯的个人项目', NULL, NULL, '386cd8152dab48ada28bea04058abc96', '2020-07-06 10:51:04', 1, 'e715d61816674c378589e34b062dedf2', NULL, 0, 0, 0);
-INSERT INTO `team_organization` VALUES (45, '吴忠的个人项目', NULL, NULL, '1355fa40b3714a5ea5ed127953f79a9f', '2020-07-06 10:51:05', 1, '0c880c2966644465ba45cfd3a87701df', NULL, 0, 0, 0);
+INSERT INTO `team_organization` VALUES (1, '基线组', NULL, NULL, '6v7be19pwman2fird04gqu53', '2018-10-12', 1, '6v7be19pwman2fird04gqu53', '', 0, 0, 0);
 
 -- ----------------------------
 -- Table structure for team_project
@@ -366,34 +358,7 @@ INSERT INTO `team_project_auth` VALUES (1, '管理员', 1, 0, '管理员', 0, '2
 INSERT INTO `team_project_auth` VALUES (2, '成员', 1, 0, '成员', 0, '2018-12-20 13:39:59', '', 1, 'member');
 INSERT INTO `team_project_auth` VALUES (3, '管理员', 1, 0, '管理员', 0, '2018-08-01 14:20:46', '6v7be19pwman2fird04gqu53', 1, 'admin');
 INSERT INTO `team_project_auth` VALUES (4, '成员', 1, 0, '成员', 0, '2018-12-20 13:39:59', '6v7be19pwman2fird04gqu53', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (88, '管理员', 1, 0, '管理员', 0, '2020-07-05 19:59:40', '063392bbed8346c4b468871f116c296e', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (89, '成员', 1, 0, '成员', 0, '2020-07-05 19:59:40', '063392bbed8346c4b468871f116c296e', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (90, '管理员', 1, 0, '管理员', 0, '2020-07-05 21:14:08', '05870cecf92f47db978ae547ace853ec', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (91, '成员', 1, 0, '成员', 0, '2020-07-05 21:14:08', '05870cecf92f47db978ae547ace853ec', 1, 'member');
-INSERT INTO `team_project_auth` VALUES (92, '管理员', 1, 0, '管理员', 0, '2020-07-05 22:16:58', '721bc2b1b8b04a3fb0be66f27ffc5e04', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (93, '成员', 1, 0, '成员', 0, '2020-07-05 22:16:58', '721bc2b1b8b04a3fb0be66f27ffc5e04', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (94, '管理员', 1, 0, '管理员', 0, '2020-07-05 22:20:39', '5b58014e1a014244bc1abf3636e6f836', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (95, '成员', 1, 0, '成员', 0, '2020-07-05 22:20:39', '5b58014e1a014244bc1abf3636e6f836', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (96, '管理员', 1, 0, '管理员', 0, '2020-07-05 22:47:50', '38f726a316c441fe914cdf8ad1de2745', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (97, '成员', 1, 0, '成员', 0, '2020-07-05 22:47:50', '38f726a316c441fe914cdf8ad1de2745', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (98, '管理员', 1, 0, '管理员', 0, '2020-07-05 23:36:15', 'fca95aa407a44e32931110c713d0bcb3', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (99, '成员', 1, 0, '成员', 0, '2020-07-05 23:36:15', 'fca95aa407a44e32931110c713d0bcb3', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (100, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:50:59', '2360f2f0f79447f4a2498ae06a9b132d', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (101, '成员', 1, 0, '成员', 0, '2020-07-06 10:50:59', '2360f2f0f79447f4a2498ae06a9b132d', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (102, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:00', 'f7041ee86dbc4b4494fbf17607ac94ce', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (103, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:00', 'f7041ee86dbc4b4494fbf17607ac94ce', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (104, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:01', '47d5d113b44f44128cb79b1d4965c531', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (105, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:01', '47d5d113b44f44128cb79b1d4965c531', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (106, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:02', '678e42846beb4b0493f0174ea95f7292', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (107, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:02', '678e42846beb4b0493f0174ea95f7292', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (108, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:02', 'df15fae11f7746238a879e2e67c1a62a', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (109, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:02', 'df15fae11f7746238a879e2e67c1a62a', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (110, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:03', '15750248caeb4f3cbb0d951f645f922d', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (111, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:03', '15750248caeb4f3cbb0d951f645f922d', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (112, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:04', 'e715d61816674c378589e34b062dedf2', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (113, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:04', 'e715d61816674c378589e34b062dedf2', 0, 'member');
-INSERT INTO `team_project_auth` VALUES (114, '管理员', 1, 0, '管理员', 0, '2020-07-06 10:51:05', '0c880c2966644465ba45cfd3a87701df', 1, 'admin');
-INSERT INTO `team_project_auth` VALUES (115, '成员', 1, 0, '成员', 0, '2020-07-06 10:51:05', '0c880c2966644465ba45cfd3a87701df', 0, 'member');
+
 
 -- ----------------------------
 -- Table structure for team_project_auth_node
