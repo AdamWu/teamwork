@@ -33,12 +33,6 @@ CREATE TABLE `team_collection`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 116 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '收藏表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_collection
--- ----------------------------
-INSERT INTO `team_collection` VALUES (113, 'k15gd32z0npileh96qxmcauw', 'task', '28qet31u7kym6gi54pa9jldr', '6v7be19pwman2fird04gqu53', '2020-03-22 11:22:24');
-INSERT INTO `team_collection` VALUES (115, '4cf53494a1cb48718ade6d0af0b317de', 'task', '0c0e2970ce4c4dd0be94eb492aa76651', '6v7be19pwman2fird04gqu53', '2020-06-29 11:22:29');
-INSERT INTO `team_collection` VALUES (116, '17b0602327f240b7babe00207f0e3414', 'task', 'ccd020c2f02949a3b2a7544fce2fbff5', '6v7be19pwman2fird04gqu53', '2020-07-01 19:04:19');
 
 -- ----------------------------
 -- Table structure for team_department
@@ -127,15 +121,6 @@ CREATE TABLE `team_invite_link`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '邀请链接表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_invite_link
--- ----------------------------
-INSERT INTO `team_invite_link` VALUES (4, '084305ad51b246eea1364974d0cec5f2', '6v7be19pwman2fird04gqu53', 'project', 'nd5gkr9qc7wumei8zo630y41', '2020-03-13 21:53:43', '2020-03-14 21:53:43');
-INSERT INTO `team_invite_link` VALUES (5, 'af844560d81c4c098f906d2701211a9a', '6v7be19pwman2fird04gqu53', 'project', '11c80c7fabd146ca95d24621124f61b4', '2020-07-01 16:57:53', '2020-07-02 16:57:53');
-INSERT INTO `team_invite_link` VALUES (6, 'a8aad93c54784100b443409e89f0246d', '6v7be19pwman2fird04gqu53', 'project', '468e736e7dbd4693a40e89fb8fc9dd5e', '2020-07-01 17:31:22', '2020-07-02 17:31:22');
-INSERT INTO `team_invite_link` VALUES (7, '95363ad1d04e4a778f749d2560f77c6b', '6v7be19pwman2fird04gqu53', 'project', '6v7be19pwman2fird04gqu53', '2020-07-02 10:19:29', '2020-07-03 10:19:29');
-INSERT INTO `team_invite_link` VALUES (8, 'd9f3db856e0d4b71aaa1bef10227ff3d', '6v7be19pwman2fird04gqu53', 'project', '6v7be19pwman2fird04gqu53', '2020-07-02 22:19:26', '2020-07-03 22:19:26');
-INSERT INTO `team_invite_link` VALUES (9, 'a730cacbedf340209f2491bdf0950f79', '6v7be19pwman2fird04gqu53', 'project', '468e736e7dbd4693a40e89fb8fc9dd5e', '2020-07-02 15:39:25', '2020-07-03 15:39:25');
 
 -- ----------------------------
 -- Table structure for team_lock
@@ -148,10 +133,6 @@ CREATE TABLE `team_lock`  (
   PRIMARY KEY (`pid`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '防灌水表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_lock
--- ----------------------------
-INSERT INTO `team_lock` VALUES (21307064333, 2, 1475226020);
 
 -- ----------------------------
 -- Table structure for team_mailqueue
