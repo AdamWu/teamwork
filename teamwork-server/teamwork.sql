@@ -4847,16 +4847,6 @@ CREATE TABLE `team_task_work_time`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '任务工时表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_task_work_time
--- ----------------------------
-INSERT INTO `team_task_work_time` VALUES (1, '28qet31u7kym6gi54pa9jldr', '6v7be19pwman2fird04gqu53', '2020-03-14 22:15:34', '工时工作内容', '2020-03-14 22:15', 5, 'w6lp2i9n3ej8bt10yqhkdvo4');
-INSERT INTO `team_task_work_time` VALUES (3, '28qet31u7kym6gi54pa9jldr', '6v7be19pwman2fird04gqu53', '2020-03-18 18:03:38', '作内容', '2020-03-18 18:03', 12, 'ne10pkm7o3wltcx6u2gs5fj4');
-INSERT INTO `team_task_work_time` VALUES (6, '433cdd9e1bdf4ad58bf7a3edad05ce25', '6v7be19pwman2fird04gqu53', '2020-06-03 20:50:24', '10aawt', '2020-06-03 20:50', 10, '05b644f86d184b99bd6d8627bbdd01d0');
-INSERT INTO `team_task_work_time` VALUES (9, 'fe545301d489440a9db961af6e0dafdb', '6v7be19pwman2fird04gqu53', '2020-07-03 18:45:10', '2', '2020-07-03 11:03', 2, '8b79068f0cf64a28bf0fb79e8b9046ef');
-INSERT INTO `team_task_work_time` VALUES (10, 'fe545301d489440a9db961af6e0dafdb', '6v7be19pwman2fird04gqu53', '2020-07-03 18:45:56', '三十分', '2020-07-04 11:03', 24, '645de4c747504b509c06a417eb7d7110');
-INSERT INTO `team_task_work_time` VALUES (11, '836a97066da741869ed87c1b8c456018', '6v7be19pwman2fird04gqu53', '2020-07-04 01:38:09', '胜多负少', '2020-07-03 17:56', 24, '77ba065eb5cf487ab0d8508154811586');
-INSERT INTO `team_task_work_time` VALUES (12, '836a97066da741869ed87c1b8c456018', '6v7be19pwman2fird04gqu53', '2020-07-04 01:38:18', '法大师傅大师傅', '2020-07-03 17:56', 2, '7ac13b455b9243d18ea20dddd951f507');
 
 -- ----------------------------
 -- Table structure for team_task_workflow
@@ -4874,13 +4864,6 @@ CREATE TABLE `team_task_workflow`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '任务工作流表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_task_workflow
--- ----------------------------
-INSERT INTO `team_task_workflow` VALUES (3, 'sbklfvyouc0qpmwhitn47j5z', '面试邀约', NULL, NULL, '6v7be19pwman2fird04gqu53', 'sbklfvyouc0qpmwhitn47j5z');
-INSERT INTO `team_task_workflow` VALUES (4, 'sbklfvyouc0qpmwhitn47j51', '面试确认', NULL, NULL, '6v7be19pwman2fird04gqu53', 'sbklfvyouc0qpmwhitn47j5z');
-INSERT INTO `team_task_workflow` VALUES (5, 'sbklfvyouc0qpmwhitn47j52', '确认入职', NULL, NULL, '6v7be19pwman2fird04gqu53', 'sbklfvyouc0qpmwhitn47j5z');
-INSERT INTO `team_task_workflow` VALUES (6, 'sbklfvyouc0qpmwhitn47j53', 'Offer发放', NULL, NULL, '6v7be19pwman2fird04gqu53', 'sbklfvyouc0qpmwhitn47j5z');
 
 -- ----------------------------
 -- Table structure for team_task_workflow_rule
@@ -4900,22 +4883,6 @@ CREATE TABLE `team_task_workflow_rule`  (
   UNIQUE INDEX `code`(`code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '任务工作流规则表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_task_workflow_rule
--- ----------------------------
-INSERT INTO `team_task_workflow_rule` VALUES (3, 'sbklfvyouc0qpmwhitn47j5z', 0, '7fea2dnwqvhxpt3mcrl4j1uz', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j5z', 1);
-INSERT INTO `team_task_workflow_rule` VALUES (4, '3', 1, 'kqdcn2w40p58r31zyo6efjib', 3, NULL, NULL, 'sbklfvyouc0qpmwhitn47j5z', 2);
-INSERT INTO `team_task_workflow_rule` VALUES (5, '4', 0, 'xqo8u02h315ytjmlegnsbvip', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j5z', 3);
-INSERT INTO `team_task_workflow_rule` VALUES (6, '5', 0, 'xqo8u02h315ytjmlegnsbvip', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j51', 1);
-INSERT INTO `team_task_workflow_rule` VALUES (7, '6', 0, 'y680trgedcavbhnz24u7i5m3', 3, NULL, NULL, 'sbklfvyouc0qpmwhitn47j51', 2);
-INSERT INTO `team_task_workflow_rule` VALUES (8, '7', 0, 'csb8djyktl0f9nop71h64m5r', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j51', 3);
-INSERT INTO `team_task_workflow_rule` VALUES (9, '8', 0, '9mo2nrbqygfv6j3tlzd1csex', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j52', 1);
-INSERT INTO `team_task_workflow_rule` VALUES (10, '9', 0, NULL, 1, NULL, NULL, 'sbklfvyouc0qpmwhitn47j52', 2);
-INSERT INTO `team_task_workflow_rule` VALUES (11, '10', 0, '5dinzhvtl29rxqey8puoa1b6', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j52', 3);
-INSERT INTO `team_task_workflow_rule` VALUES (12, '11', 0, '6v7be19pwman2fird04gqu53', 1, NULL, NULL, 'sbklfvyouc0qpmwhitn47j52', 4);
-INSERT INTO `team_task_workflow_rule` VALUES (13, '12', 0, 'csb8djyktl0f9nop71h64m5r', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j53', 1);
-INSERT INTO `team_task_workflow_rule` VALUES (14, '13', 0, 'kqdcn2w40p58r31zyo6efjib', 3, NULL, NULL, 'sbklfvyouc0qpmwhitn47j53', 2);
-INSERT INTO `team_task_workflow_rule` VALUES (15, '14', 0, '9mo2nrbqygfv6j3tlzd1csex', 0, NULL, NULL, 'sbklfvyouc0qpmwhitn47j53', 3);
 
 -- ----------------------------
 -- Table structure for team_user_token
