@@ -347,7 +347,7 @@ INSERT INTO `team_project` VALUES (13073, NULL, '新项目0706', 'edba7252bddd44
 INSERT INTO `team_project` VALUES (13074, '', '水利部水资源调研项目', '8c4f887129e54068996e2d10a1c3bac9', '', 'open', NULL, 0, 0, '', 33.33, '2020-07-06 10:22:43', '6v7be19pwman2fird04gqu53', NULL, 1, '123', 1, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
 INSERT INTO `team_project` VALUES (13075, NULL, '测试项目', '78bcc133d0cc4885975ebabeabb97ffa', '', 'open', NULL, 0, 1, '', 0.00, '2020-07-06 10:51:24', '6v7be19pwman2fird04gqu53', '2020-07-06 15:08:04', 1, NULL, 0, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
 INSERT INTO `team_project` VALUES (13076, NULL, '张一的项目', 'c70dbd8001e04e96b838309915f790ea', '', 'open', NULL, 0, 1, '', 0.00, '2020-07-06 11:08:29', '2360f2f0f79447f4a2498ae06a9b132d', '2020-07-06 17:00:25', 1, NULL, 0, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
-INSERT INTO `team_project` VALUES (13077, '', '水利部1号项目', '3488bba47b8e48fc9cc75f5e5580cfb4', '', 'open', NULL, 0, 0, '5b72d66e70b6404f93a74bbf5d4de2a4', 78.00, '2020-07-06 17:07:26', '6v7be19pwman2fird04gqu53', NULL, 1, 'test', 1, 0, '', 1, 1, 'simple', '2020-07-07', '2020-08-31', 1);
+INSERT INTO `team_project` VALUES (13077, '', '水利部1号项目', '3488bba47b8e48fc9cc75f5e5580cfb4', '', 'open', NULL, 0, 0, '', 78.00, '2020-07-06 17:07:26', '6v7be19pwman2fird04gqu53', NULL, 1, 'test', 1, 0, '', 1, 1, 'simple', '2020-07-07', '2020-08-31', 1);
 
 -- ----------------------------
 -- Table structure for team_project_auth
@@ -4363,7 +4363,6 @@ CREATE TABLE `team_project_template`  (
 -- ----------------------------
 INSERT INTO `team_project_template` VALUES (11, '产品进展', '适用于互联网产品人员对产品计划、跟进及发布管理', 0, '2018-04-30 22:15:10', 'd85f1bvwpml2nhxe94zu7tyi', '6v7be19pwman2fird04gqu53', 'http://easyproject.net/static/image/default/cover.png', '', 1);
 INSERT INTO `team_project_template` VALUES (12, '需求管理', '适用于产品部门对需求的收集、评估及反馈管理', 0, '2018-04-30 22:16:29', 'd85f1bvwpml2nhxe92zu7tyi', '6v7be19pwman2fird04gqu53', 'http://easyproject.net/static/image/default/cover.png', '', 1);
-INSERT INTO `team_project_template` VALUES (33, '水利部工作模板', '水利部工作模板', 0, '2020-07-05 22:27:04', '5b72d66e70b6404f93a74bbf5d4de2a4', '6v7be19pwman2fird04gqu53', 'https://beta.vilson.xyz/static/image/default/project-cover.png', '6v7be19pwman2fird04gqu53', 0);
 
 -- ----------------------------
 -- Table structure for team_project_version
@@ -4791,10 +4790,6 @@ INSERT INTO `team_task_stages_template` VALUES (80, '即将发布', 'd85f1bvwpml
 INSERT INTO `team_task_stages_template` VALUES (81, '测试', 'd85f1bvwpml2nhxe94zu7tyi', '2018-12-24 22:06:13', 0, 'pfidejaq2vn653h8zmsytrlb');
 INSERT INTO `team_task_stages_template` VALUES (82, '准备发布', 'd85f1bvwpml2nhxe94zu7tyi', '2018-12-24 22:06:17', 0, 'uc1etmw4k5gys8jfpdbo7zrh');
 INSERT INTO `team_task_stages_template` VALUES (83, '发布成功', 'd85f1bvwpml2nhxe94zu7tyi', '2018-12-24 22:06:23', 0, 'rmutqozd51shfp4w70n96iel');
-INSERT INTO `team_task_stages_template` VALUES (110, '任务分组1', '5b72d66e70b6404f93a74bbf5d4de2a4', '2020-07-05 22:27:04', 0, 'b05e96e8f69e44ba8bf11f05850930a4');
-INSERT INTO `team_task_stages_template` VALUES (111, '任务分组2', '5b72d66e70b6404f93a74bbf5d4de2a4', '2020-07-05 22:27:04', 0, 'da9f71a345f9475487ec3451ce60166e');
-INSERT INTO `team_task_stages_template` VALUES (112, '任务分组3', '5b72d66e70b6404f93a74bbf5d4de2a4', '2020-07-05 22:27:04', 0, '4e8be3d274b043fb9fea9f3181915408');
-INSERT INTO `team_task_stages_template` VALUES (113, '任务分组4', '5b72d66e70b6404f93a74bbf5d4de2a4', '2020-07-05 22:27:55', 0, 'ea6e2e86944f4e5ca8342c60ddeeb7f3');
 
 -- ----------------------------
 -- Table structure for team_task_tag
