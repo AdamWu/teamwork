@@ -343,10 +343,7 @@ CREATE TABLE `team_project`  (
 -- ----------------------------
 -- Records of team_project
 -- ----------------------------
-INSERT INTO `team_project` VALUES (13073, NULL, '新项目0706', 'edba7252bddd447ba0a44485d886dd0a', '新项目0706简介', 'open', NULL, 0, 1, '0', 0.00, '2020-07-06 10:20:45', '6v7be19pwman2fird04gqu53', '2020-07-06 10:50:46', 1, NULL, 0, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
 INSERT INTO `team_project` VALUES (13074, '', '水利部水资源调研项目', '8c4f887129e54068996e2d10a1c3bac9', '', 'open', NULL, 0, 0, '', 33.33, '2020-07-06 10:22:43', '6v7be19pwman2fird04gqu53', NULL, 1, '123', 1, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
-INSERT INTO `team_project` VALUES (13075, NULL, '测试项目', '78bcc133d0cc4885975ebabeabb97ffa', '', 'open', NULL, 0, 1, '', 0.00, '2020-07-06 10:51:24', '6v7be19pwman2fird04gqu53', '2020-07-06 15:08:04', 1, NULL, 0, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
-INSERT INTO `team_project` VALUES (13076, NULL, '张一的项目', 'c70dbd8001e04e96b838309915f790ea', '', 'open', NULL, 0, 1, '', 0.00, '2020-07-06 11:08:29', '2360f2f0f79447f4a2498ae06a9b132d', '2020-07-06 17:00:25', 1, NULL, 0, 0, NULL, 0, 0, 'simple', NULL, NULL, 0);
 INSERT INTO `team_project` VALUES (13077, '', '水利部1号项目', '3488bba47b8e48fc9cc75f5e5580cfb4', '', 'open', NULL, 0, 0, '', 78.00, '2020-07-06 17:07:26', '6v7be19pwman2fird04gqu53', NULL, 1, 'test', 1, 0, '', 1, 1, 'simple', '2020-07-07', '2020-08-31', 1);
 
 -- ----------------------------
@@ -3931,11 +3928,6 @@ CREATE TABLE `team_project_collection`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 70 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '项目-收藏表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_project_collection
--- ----------------------------
-INSERT INTO `team_project_collection` VALUES (68, 'edba7252bddd447ba0a44485d886dd0a', '6v7be19pwman2fird04gqu53', '2020-07-06 10:50:43');
-INSERT INTO `team_project_collection` VALUES (69, '8c4f887129e54068996e2d10a1c3bac9', 'bddc79203627409e9928b290b952ee88', '2020-07-06 15:08:12');
 
 -- ----------------------------
 -- Table structure for team_project_config
@@ -3967,14 +3959,7 @@ CREATE TABLE `team_project_features`  (
   INDEX `organization_code`(`organization_code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '版本库表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_project_features
--- ----------------------------
-INSERT INTO `team_project_features` VALUES (1, 'qtsxlwob1m0uja37y2g4pefc', '3.x', '3.x', '2019-06-23 11:17:48', NULL, '6v7be19pwman2fird04gqu53', 'mo4uqwfb06dxv8ez2spkl3rg');
-INSERT INTO `team_project_features` VALUES (2, 'qtsxlwob1m0uja37y2g4pefc1', '3.x', '3.x', '2019-06-23 11:17:48', '', '6v7be19pwman2fird04gqu53', 'nd5gkr9qc7wumei8zo630y41');
-INSERT INTO `team_project_features` VALUES (3, '0jn2pulbgyav581fzsich4or', 'V1.0', '第一版本', '2020-04-08 15:49:04', NULL, '6v7be19pwman2fird04gqu53', 'nd5gkr9qc7wumei8zo630y41');
-INSERT INTO `team_project_features` VALUES (4, 'rbqihzcnte5yw2vxd8uslg6k', 'aaa', 'aaaaaa', '2020-04-08 22:55:14', NULL, '6v7be19pwman2fird04gqu53', 'nd5gkr9qc7wumei8zo630y41');
-INSERT INTO `team_project_features` VALUES (7, 'ca9d9600ebaa4313af7f23abbbd8170e', '新版本库', '新版本库', '2020-06-06 15:42:15', NULL, '6v7be19pwman2fird04gqu53', 'borhsewfgqxy38k1jmtznuv5');
+
 
 -- ----------------------------
 -- Table structure for team_project_info
@@ -3997,10 +3982,6 @@ CREATE TABLE `team_project_info`  (
   INDEX `organization_code`(`organization_code`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '项目自定义信息表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of team_project_info
--- ----------------------------
-INSERT INTO `team_project_info` VALUES (1, '1', '1', '1', '1', '1', '1', 'oebw2ycf016j7pnxum5zikg4', 0, '1');
 
 -- ----------------------------
 -- Table structure for team_project_log
@@ -4046,17 +4027,10 @@ CREATE TABLE `team_project_member`  (
 -- ----------------------------
 -- Records of team_project_member
 -- ----------------------------
-INSERT INTO `team_project_member` VALUES (94, 'edba7252bddd447ba0a44485d886dd0a', '6v7be19pwman2fird04gqu53', '2020-07-06 10:20:45', 1, NULL);
 INSERT INTO `team_project_member` VALUES (95, '8c4f887129e54068996e2d10a1c3bac9', '6v7be19pwman2fird04gqu53', '2020-07-06 10:22:43', 1, NULL);
-INSERT INTO `team_project_member` VALUES (96, '8c4f887129e54068996e2d10a1c3bac9', 'bddc79203627409e9928b290b952ee88', '2020-07-06 10:51:15', 0, NULL);
 INSERT INTO `team_project_member` VALUES (97, '8c4f887129e54068996e2d10a1c3bac9', '6d44c444965349ae926cd5be98912292', '2020-07-06 10:51:17', 0, NULL);
 INSERT INTO `team_project_member` VALUES (98, '8c4f887129e54068996e2d10a1c3bac9', 'e9b4bbe96f04474599c9f014ea1f47e7', '2020-07-06 10:51:18', 0, NULL);
-INSERT INTO `team_project_member` VALUES (99, '78bcc133d0cc4885975ebabeabb97ffa', '6v7be19pwman2fird04gqu53', '2020-07-06 10:51:24', 1, NULL);
-INSERT INTO `team_project_member` VALUES (100, '78bcc133d0cc4885975ebabeabb97ffa', 'bddc79203627409e9928b290b952ee88', '2020-07-06 10:51:37', 0, NULL);
-INSERT INTO `team_project_member` VALUES (101, '78bcc133d0cc4885975ebabeabb97ffa', '6d44c444965349ae926cd5be98912292', '2020-07-06 10:51:38', 0, NULL);
-INSERT INTO `team_project_member` VALUES (102, 'c70dbd8001e04e96b838309915f790ea', 'bddc79203627409e9928b290b952ee88', '2020-07-06 11:08:29', 1, NULL);
 INSERT INTO `team_project_member` VALUES (103, '3488bba47b8e48fc9cc75f5e5580cfb4', '6v7be19pwman2fird04gqu53', '2020-07-06 17:07:26', 1, NULL);
-INSERT INTO `team_project_member` VALUES (104, '3488bba47b8e48fc9cc75f5e5580cfb4', 'bddc79203627409e9928b290b952ee88', '2020-07-06 17:07:48', 0, NULL);
 INSERT INTO `team_project_member` VALUES (105, '3488bba47b8e48fc9cc75f5e5580cfb4', '6d44c444965349ae926cd5be98912292', '2020-07-06 17:07:49', 0, NULL);
 
 -- ----------------------------
@@ -4626,128 +4600,9 @@ CREATE TABLE `team_task_stages`  (
 -- ----------------------------
 -- Records of team_task_stages
 -- ----------------------------
-INSERT INTO `team_task_stages` VALUES (77, '待处理', 'oebw2ycf016j7pnxum5zikg4', 0, NULL, '2020-03-10 18:17:32', '7qs8hzgjrbuxcyn5vkltdow3', 0);
-INSERT INTO `team_task_stages` VALUES (78, '进行中', 'oebw2ycf016j7pnxum5zikg4', 1, NULL, '2020-03-10 18:17:32', 'u4iy9s8p5lre0zcxngbqvfjd', 0);
-INSERT INTO `team_task_stages` VALUES (79, '已完成', 'oebw2ycf016j7pnxum5zikg4', 2, NULL, '2020-03-10 18:17:32', 'fe0doi2vy5j839lwb6ashkcx', 0);
-INSERT INTO `team_task_stages` VALUES (80, '待处理', 'nd5gkr9qc7wumei8zo630y41', 0, NULL, '2020-03-10 22:36:48', 'wyvtemnskxgadhz92pufcr5q', 0);
-INSERT INTO `team_task_stages` VALUES (81, '进行中', 'nd5gkr9qc7wumei8zo630y41', 1, NULL, '2020-03-10 22:36:48', 'q3589jvendrzbla1mtf2coh6', 0);
-INSERT INTO `team_task_stages` VALUES (82, '已完成', 'nd5gkr9qc7wumei8zo630y41', 2, NULL, '2020-03-10 22:36:48', 'e5ogyc7ml3kj6hwun2r1v8bt', 0);
-INSERT INTO `team_task_stages` VALUES (83, '待处理', 'jiflz2v1oxswtdqma468bk97', 0, NULL, '2020-03-11 10:30:57', 'mv46stpqaho3r05bciljnwgy', 0);
-INSERT INTO `team_task_stages` VALUES (84, '进行中', 'jiflz2v1oxswtdqma468bk97', 1, NULL, '2020-03-11 10:30:58', 'gtnv21y3m0iokpexslhfz5bu', 0);
-INSERT INTO `team_task_stages` VALUES (85, '已完成', 'jiflz2v1oxswtdqma468bk97', 2, NULL, '2020-03-11 10:30:58', 'j3kvh5fqancer9tlgsxy80m6', 0);
-INSERT INTO `team_task_stages` VALUES (86, '协议签订', '38xs2fyvbgdc61hqiplazr7k', 0, NULL, '2020-03-11 10:31:45', '2e3wr109fsljnugm8iyqxcha', 0);
-INSERT INTO `team_task_stages` VALUES (87, '图纸设计', '38xs2fyvbgdc61hqiplazr7k', 1, NULL, '2020-03-11 10:31:45', 'pnoqew4kdvz2xb90lay5r8ut', 0);
-INSERT INTO `team_task_stages` VALUES (88, '评审及打样', '38xs2fyvbgdc61hqiplazr7k', 2, NULL, '2020-03-11 10:31:45', 'i1mphqvf4dx637ot0y9kwzcu', 0);
-INSERT INTO `team_task_stages` VALUES (89, '构件采购', '38xs2fyvbgdc61hqiplazr7k', 3, NULL, '2020-03-11 10:31:45', 'zr54tbuw218mpfegj6vlas0y', 0);
-INSERT INTO `team_task_stages` VALUES (90, '制造安装', '38xs2fyvbgdc61hqiplazr7k', 4, NULL, '2020-03-11 10:31:45', '27ap0zklsut8nrvc1m5jbhqo', 0);
-INSERT INTO `team_task_stages` VALUES (91, '内部检验', '38xs2fyvbgdc61hqiplazr7k', 5, NULL, '2020-03-11 10:31:45', '9oxj3u0t82zsrnqpa7ydcg14', 0);
-INSERT INTO `team_task_stages` VALUES (92, '验收', '38xs2fyvbgdc61hqiplazr7k', 6, NULL, '2020-03-11 10:31:45', 'x9v8g0n1rf436eotiduqha5w', 0);
-INSERT INTO `team_task_stages` VALUES (93, '协议签订', 'ol5bxfcrwz8p0jn12ihs3uaq', 0, NULL, '2020-05-27 22:30:36', 'mloz7kf42r5hgawqsby8ue1c', 0);
-INSERT INTO `team_task_stages` VALUES (94, '图纸设计', 'ol5bxfcrwz8p0jn12ihs3uaq', 1, NULL, '2020-05-27 22:30:36', 'pz34i1o9fdtgnesv5k2ycxmw', 0);
-INSERT INTO `team_task_stages` VALUES (95, '评审及打样', 'ol5bxfcrwz8p0jn12ihs3uaq', 2, NULL, '2020-05-27 22:30:36', 'mt4e7s6pr1u9bfa32n5jzg0h', 0);
-INSERT INTO `team_task_stages` VALUES (96, '构件采购', 'ol5bxfcrwz8p0jn12ihs3uaq', 3, NULL, '2020-05-27 22:30:36', 'nc1vo8h4war3y06zxbutkdfl', 0);
-INSERT INTO `team_task_stages` VALUES (97, '制造安装', 'ol5bxfcrwz8p0jn12ihs3uaq', 4, NULL, '2020-05-27 22:30:36', '6cy13tn8e0sjpglfbv4qd759', 0);
-INSERT INTO `team_task_stages` VALUES (98, '内部检验', 'ol5bxfcrwz8p0jn12ihs3uaq', 5, NULL, '2020-05-27 22:30:36', 'bqcu9aom8k1xj50lzpfeidy4', 0);
-INSERT INTO `team_task_stages` VALUES (99, '验收', 'ol5bxfcrwz8p0jn12ihs3uaq', 6, NULL, '2020-05-27 22:30:36', '72hy5608pzfqk13bovnidcja', 0);
-INSERT INTO `team_task_stages` VALUES (100, '协议签订', '65a462912f9f473d9acfa99d98bcdef0', 0, NULL, '2020-05-27 23:08:01', '4ac7038e439744528e10f9c8e48c5bb1', 0);
-INSERT INTO `team_task_stages` VALUES (101, '图纸设计', '65a462912f9f473d9acfa99d98bcdef0', 1, NULL, '2020-05-27 23:08:01', '6f34d90e1c054b3899955e4d6d6b6b3f', 0);
-INSERT INTO `team_task_stages` VALUES (102, '评审及打样', '65a462912f9f473d9acfa99d98bcdef0', 2, NULL, '2020-05-27 23:08:01', 'c53d770bba214520ba615463b8035405', 0);
-INSERT INTO `team_task_stages` VALUES (103, '构件采购', '65a462912f9f473d9acfa99d98bcdef0', 3, NULL, '2020-05-27 23:08:01', '20142b92fa4a4d439133b15a2f7978c7', 0);
-INSERT INTO `team_task_stages` VALUES (104, '制造安装', '65a462912f9f473d9acfa99d98bcdef0', 4, NULL, '2020-05-27 23:08:01', '56884e825cbb41ad9aec5b7cd50370ed', 0);
-INSERT INTO `team_task_stages` VALUES (105, '内部检验', '65a462912f9f473d9acfa99d98bcdef0', 5, NULL, '2020-05-27 23:08:01', 'aa9e93fe81454972896d6d7f84ef5fc9', 0);
-INSERT INTO `team_task_stages` VALUES (106, '验收', '65a462912f9f473d9acfa99d98bcdef0', 6, NULL, '2020-05-27 23:08:01', '6c7027c3f5904c2585b6df5c207b3720', 0);
-INSERT INTO `team_task_stages` VALUES (107, '协议签订', '9d88e6d9fef34999ab2218428f59062b', 0, NULL, '2020-05-28 00:30:45', '5f4f508387aa4e2da16431068c4a6386', 0);
-INSERT INTO `team_task_stages` VALUES (108, '图纸设计', '9d88e6d9fef34999ab2218428f59062b', 1, NULL, '2020-05-28 00:30:46', '1f0ebdb59dc34aa48d43f68b52bec534', 0);
-INSERT INTO `team_task_stages` VALUES (109, '评审及打样', '9d88e6d9fef34999ab2218428f59062b', 2, NULL, '2020-05-28 00:30:46', 'e6665d38256b4745aa615c6c614d4b1e', 0);
-INSERT INTO `team_task_stages` VALUES (110, '构件采购', '9d88e6d9fef34999ab2218428f59062b', 3, NULL, '2020-05-28 00:30:46', '4bacb407ff194682b57b6ce0407c9d0f', 0);
-INSERT INTO `team_task_stages` VALUES (111, '制造安装', '9d88e6d9fef34999ab2218428f59062b', 4, NULL, '2020-05-28 00:30:46', 'ba4fef493db7474386b0374a716857f2', 0);
-INSERT INTO `team_task_stages` VALUES (112, '内部检验', '9d88e6d9fef34999ab2218428f59062b', 5, NULL, '2020-05-28 00:30:46', '2ac899d4b1b743c8b290e75f07a7f3aa', 0);
-INSERT INTO `team_task_stages` VALUES (113, '验收', '9d88e6d9fef34999ab2218428f59062b', 6, NULL, '2020-05-28 00:30:46', '131dca6a33d5416eafe595c795f6fc3e', 0);
-INSERT INTO `team_task_stages` VALUES (121, '待处理', '41c0e3a71c7048989152bf56f278895e', 0, NULL, '2020-05-28 00:41:46', '630d42bb48cd447e913992fb15bf5aae', 0);
-INSERT INTO `team_task_stages` VALUES (122, '进行中', '41c0e3a71c7048989152bf56f278895e', 1, NULL, '2020-05-28 00:41:46', '78f0b42066d64ce580288bcee6d1560d', 0);
-INSERT INTO `team_task_stages` VALUES (123, '已完成', '41c0e3a71c7048989152bf56f278895e', 2, NULL, '2020-05-28 00:41:46', '5bd397830dc44c269895c297b42f5644', 0);
-INSERT INTO `team_task_stages` VALUES (124, '待处理', '4c2d9d0c0a3542798259a3cbe24a13ff', 0, NULL, '2020-05-28 00:45:43', '80c80de18cda476a8261c3a1e4ed0f26', 0);
-INSERT INTO `team_task_stages` VALUES (125, '进行中', '4c2d9d0c0a3542798259a3cbe24a13ff', 1, NULL, '2020-05-28 00:45:43', 'cc66c9c3e14040778f64d375dadf2679', 0);
-INSERT INTO `team_task_stages` VALUES (126, '已完成', '4c2d9d0c0a3542798259a3cbe24a13ff', 2, NULL, '2020-05-28 00:45:43', 'e37f422f6ba84ee2bfcc744466da8ac4', 0);
-INSERT INTO `team_task_stages` VALUES (127, '协议签订', 'borhsewfgqxy38k1jmtznuv5', 0, NULL, '2020-05-28 00:48:00', 'btkpgas2d1on6qrhim9y540l', 0);
-INSERT INTO `team_task_stages` VALUES (128, '图纸设计', 'borhsewfgqxy38k1jmtznuv5', 1, NULL, '2020-05-28 00:48:00', 'o32v9ypmzucs7ehbq5fdnxgk', 0);
-INSERT INTO `team_task_stages` VALUES (129, '评审及打样', 'borhsewfgqxy38k1jmtznuv5', 2, NULL, '2020-05-28 00:48:00', 'utswi4omgnh07cqbpr28l6xa', 0);
-INSERT INTO `team_task_stages` VALUES (130, '构件采购', 'borhsewfgqxy38k1jmtznuv5', 3, NULL, '2020-05-28 00:48:00', 'oanqyxsd3k46mc8guv09irew', 0);
-INSERT INTO `team_task_stages` VALUES (131, '制造安装', 'borhsewfgqxy38k1jmtznuv5', 4, NULL, '2020-05-28 00:48:00', 'kzrdnqjg3f576lpvhyxs8w1o', 0);
-INSERT INTO `team_task_stages` VALUES (132, '内部检验', 'borhsewfgqxy38k1jmtznuv5', 5, NULL, '2020-05-28 00:48:00', '73uivpeh9fxy5w2n4j1qkszb', 0);
-INSERT INTO `team_task_stages` VALUES (133, '验收', 'borhsewfgqxy38k1jmtznuv5', 6, NULL, '2020-05-28 00:48:00', 'me2y4nbv36g1d8ur70xosc9l', 0);
-INSERT INTO `team_task_stages` VALUES (134, '待处理', '11c80c7fabd146ca95d24621124f61b4', 0, NULL, '2020-06-29 23:17:32', '6043a6338e824c9ba91d3690a833e5e5', 0);
-INSERT INTO `team_task_stages` VALUES (135, '进行中', '11c80c7fabd146ca95d24621124f61b4', 1, NULL, '2020-06-29 23:17:32', '149992994065493d94427ce2a7ce358f', 0);
-INSERT INTO `team_task_stages` VALUES (136, '已完成', '11c80c7fabd146ca95d24621124f61b4', 2, NULL, '2020-06-29 23:17:32', '75cf84aca8d848dbb79d5e982d3bcdec', 0);
-INSERT INTO `team_task_stages` VALUES (137, '待处理', '468e736e7dbd4693a40e89fb8fc9dd5e', 0, NULL, '2020-07-01 17:26:33', '39c23a57be754cb3800dfb188c21bde5', 0);
-INSERT INTO `team_task_stages` VALUES (138, '进行中', '468e736e7dbd4693a40e89fb8fc9dd5e', 1, NULL, '2020-07-01 17:26:33', '7572ddd66cd646c9b2280e5bc468a182', 0);
-INSERT INTO `team_task_stages` VALUES (139, '已完成', '468e736e7dbd4693a40e89fb8fc9dd5e', 2, NULL, '2020-07-01 17:26:33', 'e7aac9b7183f4f47843a8fbb22c198b1', 0);
-INSERT INTO `team_task_stages` VALUES (140, '待处理', 'e4183b8c7d1441ae86592b1b9af72f05', 0, NULL, '2020-07-01 17:26:52', '309e69dc6469404c9bfade60f0fad121', 0);
-INSERT INTO `team_task_stages` VALUES (141, '进行中', 'e4183b8c7d1441ae86592b1b9af72f05', 1, NULL, '2020-07-01 17:26:52', '31f5824c20a9481894b41af04916e275', 0);
-INSERT INTO `team_task_stages` VALUES (142, '已完成', 'e4183b8c7d1441ae86592b1b9af72f05', 2, NULL, '2020-07-01 17:26:52', 'add3f2712f6646c79fd75b51711cbbfd', 0);
-INSERT INTO `team_task_stages` VALUES (145, 'test', 'jiflz2v1oxswtdqma468bk97', 145, NULL, '2020-07-02 15:28:00', 'c764f1eaf7474d9784a3a3a160da7b0b', 1);
-INSERT INTO `team_task_stages` VALUES (146, '新建列表', '468e736e7dbd4693a40e89fb8fc9dd5e', 146, NULL, '2020-07-03 18:39:17', '3cfbdac34518451abe63c37e14d53cf4', 0);
-INSERT INTO `team_task_stages` VALUES (150, '待处理', 'eb8bfddb03ec42d2af05e5f418e46259', 0, NULL, '2020-07-03 12:03:35', 'cce4840f66ed4637a2380263016329b7', 0);
-INSERT INTO `team_task_stages` VALUES (151, '进行中', 'eb8bfddb03ec42d2af05e5f418e46259', 1, NULL, '2020-07-03 12:03:35', '8a7e0817c26140a48bac1cf6a0fb92c4', 0);
-INSERT INTO `team_task_stages` VALUES (152, '已完成', 'eb8bfddb03ec42d2af05e5f418e46259', 2, NULL, '2020-07-03 12:03:35', '0060a91072b84a4fa3ca0cd9fdd2308b', 0);
-INSERT INTO `team_task_stages` VALUES (153, '待处理', '6d54506b13a947f58895eec8db465e7e', 0, NULL, '2020-07-03 22:35:16', '53a8bfa213b348108271e5a2be0ea36d', 0);
-INSERT INTO `team_task_stages` VALUES (154, '进行中', '6d54506b13a947f58895eec8db465e7e', 1, NULL, '2020-07-03 22:35:16', '8ff36d3491ed41e6b7b50e0eea3e8131', 0);
-INSERT INTO `team_task_stages` VALUES (155, '已完成', '6d54506b13a947f58895eec8db465e7e', 2, NULL, '2020-07-03 22:35:16', '1315ee7c5fe144e795479ff38778fc90', 0);
-INSERT INTO `team_task_stages` VALUES (156, '测试列表', '6d54506b13a947f58895eec8db465e7e', 156, NULL, '2020-07-04 01:25:31', '054255d177044663b88eccf2ce0fd0b0', 0);
-INSERT INTO `team_task_stages` VALUES (159, '待处理', '6db53e1cfe4c4a4d82b95914b98b1c64', 0, NULL, '2020-07-04 17:18:52', 'ba8e4de8400740d1b479f080a78ab058', 0);
-INSERT INTO `team_task_stages` VALUES (160, '进行中', '6db53e1cfe4c4a4d82b95914b98b1c64', 1, NULL, '2020-07-04 17:18:52', 'a77c1057dab7468790a2b37f88487a0f', 0);
-INSERT INTO `team_task_stages` VALUES (161, '已完成', '6db53e1cfe4c4a4d82b95914b98b1c64', 2, NULL, '2020-07-04 17:18:52', '385a834fda7f45df877d016af7fa6252', 0);
-INSERT INTO `team_task_stages` VALUES (162, '产品计划', '7e356db428c74e3caba617991e4bbcef', 0, NULL, '2020-07-04 17:35:56', '4c4e5292756e4bb0a9aecbbaf5ccc1f6', 0);
-INSERT INTO `team_task_stages` VALUES (163, '即将发布', '7e356db428c74e3caba617991e4bbcef', 1, NULL, '2020-07-04 17:35:56', 'e7092266e82f4497b132dbdc673bb07c', 0);
-INSERT INTO `team_task_stages` VALUES (164, '测试', '7e356db428c74e3caba617991e4bbcef', 2, NULL, '2020-07-04 17:35:56', '13b78f29821e4e1d906de0d031be40f8', 0);
-INSERT INTO `team_task_stages` VALUES (165, '准备发布', '7e356db428c74e3caba617991e4bbcef', 3, NULL, '2020-07-04 17:35:56', 'f55f90b15fe1487e89f804956e2dd618', 0);
-INSERT INTO `team_task_stages` VALUES (166, '发布成功', '7e356db428c74e3caba617991e4bbcef', 4, NULL, '2020-07-04 17:35:56', '05bdbe4ed16544d0905d5cc5c40f5b14', 0);
-INSERT INTO `team_task_stages` VALUES (167, '一组任务', '12b5fb56e28749eabe46c276308f6d15', 0, NULL, '2020-07-05 21:58:05', '2a73722111404ed79ac4ac459f0f2afb', 0);
-INSERT INTO `team_task_stages` VALUES (168, '二组任务', '12b5fb56e28749eabe46c276308f6d15', 1, NULL, '2020-07-05 21:58:05', '178d29fede204125a6aca8377af5fdd8', 0);
-INSERT INTO `team_task_stages` VALUES (169, '三组任务', '12b5fb56e28749eabe46c276308f6d15', 2, NULL, '2020-07-05 21:58:05', '8de0bfb68733409a9000586349be448e', 0);
-INSERT INTO `team_task_stages` VALUES (170, '暂缓执行', '12b5fb56e28749eabe46c276308f6d15', 170, NULL, '2020-07-05 22:25:07', 'd51881224e814cf2b572b8375169d22c', 0);
-INSERT INTO `team_task_stages` VALUES (171, '一组处理', 'fe94d5823cf74eccbd4492aa71e2755a', 0, NULL, '2020-07-05 22:28:06', '383bb4696abf49199e794302df6aa0f1', 0);
-INSERT INTO `team_task_stages` VALUES (172, '二组处理', 'fe94d5823cf74eccbd4492aa71e2755a', 1, NULL, '2020-07-05 22:28:06', 'e0c8a3a93ebb49b0903132b80f72d75a', 0);
-INSERT INTO `team_task_stages` VALUES (173, '三组处理', 'fe94d5823cf74eccbd4492aa71e2755a', 2, NULL, '2020-07-05 22:28:06', '0f02da63e3cf45068a797a65d87cb19e', 0);
-INSERT INTO `team_task_stages` VALUES (174, '暂缓任务', 'fe94d5823cf74eccbd4492aa71e2755a', 3, NULL, '2020-07-05 22:28:06', 'f2a6fb252b7f487cb277cd16c6c1642d', 0);
-INSERT INTO `team_task_stages` VALUES (175, '需求收集', 'd4f542577ac4406eaaac4ff4d1bc195e', 0, NULL, '2020-07-05 22:30:11', '4661ac87a18c4875b7d07788a9c44337', 0);
-INSERT INTO `team_task_stages` VALUES (176, '评估确认', 'd4f542577ac4406eaaac4ff4d1bc195e', 1, NULL, '2020-07-05 22:30:11', 'eb1f8c45a7ac43bda96aa1c22728b42c', 0);
-INSERT INTO `team_task_stages` VALUES (177, '需求暂缓', 'd4f542577ac4406eaaac4ff4d1bc195e', 2, NULL, '2020-07-05 22:30:11', 'f0c5b741ebff427d97ce2c22d8a77da3', 0);
-INSERT INTO `team_task_stages` VALUES (178, '研发中', 'd4f542577ac4406eaaac4ff4d1bc195e', 3, NULL, '2020-07-05 22:30:11', '09aa507b96ca4880ba92e3946dc7767c', 0);
-INSERT INTO `team_task_stages` VALUES (179, '内测中', 'd4f542577ac4406eaaac4ff4d1bc195e', 4, NULL, '2020-07-05 22:30:11', 'd317234027b24c94b244b755b7ace724', 0);
-INSERT INTO `team_task_stages` VALUES (180, '通知用户', 'd4f542577ac4406eaaac4ff4d1bc195e', 5, NULL, '2020-07-05 22:30:11', 'a8f57803cf434d05afc3e4ef3fc54595', 0);
-INSERT INTO `team_task_stages` VALUES (181, '已完成&归档', 'd4f542577ac4406eaaac4ff4d1bc195e', 6, NULL, '2020-07-05 22:30:11', '4fe2bade32474557b510e9b0143e1d25', 0);
-INSERT INTO `team_task_stages` VALUES (182, '一组处理', '7109c15a1dcc4292b2514d91842d9463', 0, NULL, '2020-07-06 00:43:54', '44c44a2e73114a7f83cb227dd12030cc', 0);
-INSERT INTO `team_task_stages` VALUES (183, '二组处理', '7109c15a1dcc4292b2514d91842d9463', 1, NULL, '2020-07-06 00:43:54', '493aed6812b74e75985ca01720a10e8e', 0);
-INSERT INTO `team_task_stages` VALUES (184, '三组处理', '7109c15a1dcc4292b2514d91842d9463', 2, NULL, '2020-07-06 00:43:54', '0d2f5e38290c488999eccb54c26a6f04', 0);
-INSERT INTO `team_task_stages` VALUES (185, '暂缓任务', '7109c15a1dcc4292b2514d91842d9463', 3, NULL, '2020-07-06 00:43:54', '7da6cfebf86843768a2e8428326dfc76', 0);
-INSERT INTO `team_task_stages` VALUES (186, '待处理', '002a636f06e5488b80fe266762acb4d6', 0, NULL, '2020-07-05 19:53:38', '80bd774041194555b792c719e1aba950', 0);
-INSERT INTO `team_task_stages` VALUES (187, '进行中', '002a636f06e5488b80fe266762acb4d6', 1, NULL, '2020-07-05 19:53:38', 'ae0c203a7790477fba48041d819a3e49', 0);
-INSERT INTO `team_task_stages` VALUES (188, '已完成', '002a636f06e5488b80fe266762acb4d6', 2, NULL, '2020-07-05 19:53:38', '4129166c5574429ca8e94781586babe6', 0);
-INSERT INTO `team_task_stages` VALUES (189, '待处理', '7fc135d9be2f4076b7286e497399014f', 0, NULL, '2020-07-05 20:57:39', 'b9a02d64d8d94762ba58e29b93aff0e6', 0);
-INSERT INTO `team_task_stages` VALUES (190, '进行中', '7fc135d9be2f4076b7286e497399014f', 1, NULL, '2020-07-05 20:57:40', '9650b14c205240d6890872190ed8d777', 0);
-INSERT INTO `team_task_stages` VALUES (191, '已完成', '7fc135d9be2f4076b7286e497399014f', 2, NULL, '2020-07-05 20:57:40', 'ef0bd17bf68746769c6a27415d327725', 0);
-INSERT INTO `team_task_stages` VALUES (192, '待处理', 'd1b35fdb678242efbad4e700e712afb1', 0, NULL, '2020-07-05 22:22:51', '33fc93321a2942528d0bd467e1c1a651', 0);
-INSERT INTO `team_task_stages` VALUES (193, '进行中', 'd1b35fdb678242efbad4e700e712afb1', 1, NULL, '2020-07-05 22:22:51', '44becc8f1ce248ad99f9f7f0a28283d4', 0);
-INSERT INTO `team_task_stages` VALUES (194, '已完成', 'd1b35fdb678242efbad4e700e712afb1', 2, NULL, '2020-07-05 22:22:51', 'cf428b2e83a24fa497e92bba6bd4bcce', 0);
-INSERT INTO `team_task_stages` VALUES (195, '待处理', '50c9cebd310a4461a8355a8e2ebd74cf', 0, NULL, '2020-07-05 22:49:07', '3f881348e453460aa1b15d8413034f53', 0);
-INSERT INTO `team_task_stages` VALUES (196, '进行中', '50c9cebd310a4461a8355a8e2ebd74cf', 1, NULL, '2020-07-05 22:49:07', '61fbe07b667f41809d26cedfb03e0531', 0);
-INSERT INTO `team_task_stages` VALUES (197, '已完成', '50c9cebd310a4461a8355a8e2ebd74cf', 2, NULL, '2020-07-05 22:49:07', '9e2b2dd68cfb49cc839972921778b313', 0);
-INSERT INTO `team_task_stages` VALUES (198, '待处理', 'e5b3217981104973a3b14d37f3c9133e', 0, NULL, '2020-07-05 23:05:28', '7332fb079ddc4452b2bc3f851e2d5d46', 0);
-INSERT INTO `team_task_stages` VALUES (199, '进行中', 'e5b3217981104973a3b14d37f3c9133e', 1, NULL, '2020-07-05 23:05:28', '0977636446fa486c84d2002ae911f963', 0);
-INSERT INTO `team_task_stages` VALUES (200, '已完成', 'e5b3217981104973a3b14d37f3c9133e', 2, NULL, '2020-07-05 23:05:28', '87acb5086a914c1cb2564d2203e511b6', 0);
-INSERT INTO `team_task_stages` VALUES (201, '待处理', 'edba7252bddd447ba0a44485d886dd0a', 0, NULL, '2020-07-06 10:20:45', '5c20dfe1872d47b3be3b6a93225f14a7', 0);
-INSERT INTO `team_task_stages` VALUES (202, '进行中', 'edba7252bddd447ba0a44485d886dd0a', 1, NULL, '2020-07-06 10:20:45', '68043b9d3b624c49bd63aa96b56eef22', 0);
-INSERT INTO `team_task_stages` VALUES (203, '已完成', 'edba7252bddd447ba0a44485d886dd0a', 2, NULL, '2020-07-06 10:20:45', 'f906f3343d6f4823805a34e43d6e85e9', 0);
 INSERT INTO `team_task_stages` VALUES (204, '任务分组1', '8c4f887129e54068996e2d10a1c3bac9', 0, NULL, '2020-07-06 10:22:43', 'e558aeb440494ed2828368a1634f2c09', 0);
 INSERT INTO `team_task_stages` VALUES (205, '任务分组2', '8c4f887129e54068996e2d10a1c3bac9', 1, NULL, '2020-07-06 10:22:43', '0669fbf3380c486390f4edf8962cb7cf', 0);
 INSERT INTO `team_task_stages` VALUES (206, '任务分组3', '8c4f887129e54068996e2d10a1c3bac9', 2, NULL, '2020-07-06 10:22:43', '3d2b44fbf63f49498746469438f3971a', 0);
-INSERT INTO `team_task_stages` VALUES (207, '待处理', '78bcc133d0cc4885975ebabeabb97ffa', 0, NULL, '2020-07-06 10:51:24', '213eaf9064bb45309b0e1d9f6aca14fc', 0);
-INSERT INTO `team_task_stages` VALUES (208, '进行中', '78bcc133d0cc4885975ebabeabb97ffa', 1, NULL, '2020-07-06 10:51:24', 'eb942b1fd5b84c0db4c331b7ed88b5c7', 0);
-INSERT INTO `team_task_stages` VALUES (209, '已完成', '78bcc133d0cc4885975ebabeabb97ffa', 2, NULL, '2020-07-06 10:51:24', '31745ede896f4816916125a23f230520', 0);
-INSERT INTO `team_task_stages` VALUES (210, '待处理', 'c70dbd8001e04e96b838309915f790ea', 0, NULL, '2020-07-06 11:08:29', 'a213c4bfeb8947359b4a429e0ebb6c81', 0);
-INSERT INTO `team_task_stages` VALUES (211, '进行中', 'c70dbd8001e04e96b838309915f790ea', 1, NULL, '2020-07-06 11:08:29', 'ba0fd090de0a41328d3c9875263b1ec6', 0);
-INSERT INTO `team_task_stages` VALUES (212, '已完成', 'c70dbd8001e04e96b838309915f790ea', 2, NULL, '2020-07-06 11:08:29', 'cd7fe24e1e8944059259b7691a923435', 0);
 INSERT INTO `team_task_stages` VALUES (213, '任务分组1', '3488bba47b8e48fc9cc75f5e5580cfb4', 0, NULL, '2020-07-06 17:07:26', '67553773f3c245c0abbd3a58ddbbe374', 0);
 INSERT INTO `team_task_stages` VALUES (214, '任务分组2', '3488bba47b8e48fc9cc75f5e5580cfb4', 1, NULL, '2020-07-06 17:07:26', '9efeaa61ef274457922a8a10b77e13f6', 0);
 INSERT INTO `team_task_stages` VALUES (215, '任务分组3', '3488bba47b8e48fc9cc75f5e5580cfb4', 2, NULL, '2020-07-06 17:07:26', 'e9c7e444dac549419f701aacc1947008', 0);
