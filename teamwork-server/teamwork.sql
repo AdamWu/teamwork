@@ -183,7 +183,7 @@ CREATE TABLE `team_member`  (
 -- ----------------------------
 -- Records of team_member
 -- ----------------------------
-INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '', '吴猛', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', '', 0, 0, 0, NULL, '', 'wmeng@autof.cn', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
+INSERT INTO `team_member` VALUES (582, 'admin', '14e1b600b1fd579f47433b88e8d85291', 'admin', '', 'admin', NULL, 1, '2020-06-20 17:24:48', '', 'http://127.0.0.1:8881/common/image?filePathName=/user.jpg&realFileName=user.jpg', '', 0, 0, 0, NULL, '', 'wmeng@autof.cn', '6v7be19pwman2fird04gqu53', NULL, NULL, NULL);
 
 
 -- ----------------------------
@@ -215,8 +215,7 @@ CREATE TABLE `team_member_account`  (
 -- ----------------------------
 -- Records of team_member_account
 -- ----------------------------
-INSERT INTO `team_member_account` VALUES (21, '6v7be19pwman2fird04gqu11', '6v7be19pwman2fird04gqu53', '6v7be19pwman2fird04gqu53', '', '3', 1, 'admin', '18681140825', '545522390@qq.com', '2019-01-05 21:57:01', NULL, 1, '描述12', '', '资深工程师', '研发部');
-
+INSERT INTO `team_member_account` VALUES (21, '6v7be19pwman2fird04gqu11', '6v7be19pwman2fird04gqu53', '6v7be19pwman2fird04gqu53', '', '3', 1, 'admin', '', 'wmeng@autof.cn', '2019-01-05 21:57:01', NULL, 1, '描述12', '', '', '');
 
 
 -- ----------------------------
@@ -269,7 +268,7 @@ CREATE TABLE `team_organization`  (
 -- ----------------------------
 -- Records of team_organization
 -- ----------------------------
-INSERT INTO `team_organization` VALUES (1, '基线组', NULL, NULL, '6v7be19pwman2fird04gqu53', '2018-10-12', 1, '6v7be19pwman2fird04gqu53', '', 0, 0, 0);
+INSERT INTO `team_organization` VALUES (1, 'admin的个人项目', NULL, NULL, '6v7be19pwman2fird04gqu53', '2018-10-12', 1, '6v7be19pwman2fird04gqu53', '', 0, 0, 0);
 
 -- ----------------------------
 -- Table structure for team_project
@@ -4505,13 +4504,6 @@ CREATE TABLE `team_task_stages_template`  (
 -- ----------------------------
 -- Records of team_task_stages_template
 -- ----------------------------
-INSERT INTO `team_task_stages_template` VALUES (65, '协议签订', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:00:33', 0, '4510enfyvjtzho3cw28xsagi');
-INSERT INTO `team_task_stages_template` VALUES (66, '图纸设计', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:00:38', 0, '3esu4p172alok89wjmrvqihz');
-INSERT INTO `team_task_stages_template` VALUES (67, '评审及打样', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:00:43', 0, 'e6jp81o7drfkzluxbhmiaqtv');
-INSERT INTO `team_task_stages_template` VALUES (68, '构件采购', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:00:52', 0, 'tpy76njoair0clhz9xmeg482');
-INSERT INTO `team_task_stages_template` VALUES (69, '制造安装', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:00:58', 0, 've97pldtbnjrqco1hyfx82sa');
-INSERT INTO `team_task_stages_template` VALUES (70, '内部检验', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:01:04', 0, '4phrcltwygziu2s13jxbaqv8');
-INSERT INTO `team_task_stages_template` VALUES (71, '验收', 'd85f1bvwpml2nhxe91zu7tyi', '2018-12-24 22:01:09', 0, 'qxi9n42p0w57jtrmyhz8gl3c');
 INSERT INTO `team_task_stages_template` VALUES (72, '需求收集', 'd85f1bvwpml2nhxe92zu7tyi', '2018-12-24 22:01:30', 0, '48h13usk7en6ljyxbqgiw02z');
 INSERT INTO `team_task_stages_template` VALUES (73, '评估确认', 'd85f1bvwpml2nhxe92zu7tyi', '2018-12-24 22:02:17', 0, '70z1fpxytvchbadkgsieowuj');
 INSERT INTO `team_task_stages_template` VALUES (74, '需求暂缓', 'd85f1bvwpml2nhxe92zu7tyi', '2018-12-24 22:02:22', 0, 'bkyunf9jr2c37m4oi81sxzqp');
