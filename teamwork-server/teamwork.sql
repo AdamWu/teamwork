@@ -289,7 +289,7 @@ CREATE TABLE `team_project`  (
   `create_time` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建时间',
   `organization_code` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '组织id',
   `deleted_time` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '删除时间',
-  `private` tinyint(1) NULL DEFAULT 1 COMMENT '是否私有',
+  `private` tinyint(1) NULL DEFAULT 0 COMMENT '是否私有',
   `prefix` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '项目前缀',
   `open_prefix` tinyint(1) NULL DEFAULT 0 COMMENT '是否开启项目前缀',
   `archive` tinyint(1) NULL DEFAULT 0 COMMENT '是否归档',
@@ -299,7 +299,7 @@ CREATE TABLE `team_project`  (
   `task_board_theme` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT 'default' COMMENT '看板风格',
   `begin_time` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '项目开始日期',
   `end_time` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '项目截止日期',
-  `auto_update_schedule` tinyint(1) NULL DEFAULT 0 COMMENT '自动更新项目进度',
+  `auto_update_schedule` tinyint(1) NULL DEFAULT 1 COMMENT '自动更新项目进度',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `code`(`code`) USING BTREE,
   INDEX `project`(`order`) USING BTREE
@@ -710,20 +710,20 @@ INSERT INTO `team_project_auth_node` VALUES (6971, 3, 'project/task_stages/_getA
 INSERT INTO `team_project_auth_node` VALUES (6972, 3, 'project/task/_taskworktimelist');
 INSERT INTO `team_project_auth_node` VALUES (7151, 3, 'project/project_member/_listforinvite');
 INSERT INTO `team_project_auth_node` VALUES (13588, 4, 'project/account');
-INSERT INTO `team_project_auth_node` VALUES (13589, 4, 'project/account/add');
-INSERT INTO `team_project_auth_node` VALUES (13590, 4, 'project/account/auth');
-INSERT INTO `team_project_auth_node` VALUES (13591, 4, 'project/account/del');
-INSERT INTO `team_project_auth_node` VALUES (13592, 4, 'project/account/edit');
-INSERT INTO `team_project_auth_node` VALUES (13593, 4, 'project/account/forbid');
+-- INSERT INTO `team_project_auth_node` VALUES (13589, 4, 'project/account/add');
+-- INSERT INTO `team_project_auth_node` VALUES (13590, 4, 'project/account/auth');
+-- INSERT INTO `team_project_auth_node` VALUES (13591, 4, 'project/account/del');
+-- INSERT INTO `team_project_auth_node` VALUES (13592, 4, 'project/account/edit');
+-- INSERT INTO `team_project_auth_node` VALUES (13593, 4, 'project/account/forbid');
 INSERT INTO `team_project_auth_node` VALUES (13594, 4, 'project/account/index');
 INSERT INTO `team_project_auth_node` VALUES (13595, 4, 'project/account/read');
 INSERT INTO `team_project_auth_node` VALUES (13596, 4, 'project/account/resume');
 INSERT INTO `team_project_auth_node` VALUES (13597, 4, 'project/auth');
-INSERT INTO `team_project_auth_node` VALUES (13598, 4, 'project/auth/add');
-INSERT INTO `team_project_auth_node` VALUES (13599, 4, 'project/auth/apply');
-INSERT INTO `team_project_auth_node` VALUES (13600, 4, 'project/auth/del');
-INSERT INTO `team_project_auth_node` VALUES (13601, 4, 'project/auth/edit');
-INSERT INTO `team_project_auth_node` VALUES (13602, 4, 'project/auth/forbid');
+-- INSERT INTO `team_project_auth_node` VALUES (13598, 4, 'project/auth/add');
+-- INSERT INTO `team_project_auth_node` VALUES (13599, 4, 'project/auth/apply');
+-- INSERT INTO `team_project_auth_node` VALUES (13600, 4, 'project/auth/del');
+-- INSERT INTO `team_project_auth_node` VALUES (13601, 4, 'project/auth/edit');
+-- INSERT INTO `team_project_auth_node` VALUES (13602, 4, 'project/auth/forbid');
 INSERT INTO `team_project_auth_node` VALUES (13603, 4, 'project/auth/index');
 INSERT INTO `team_project_auth_node` VALUES (13604, 4, 'project/auth/resume');
 INSERT INTO `team_project_auth_node` VALUES (13605, 4, 'project/auth/setdefault');
@@ -763,16 +763,16 @@ INSERT INTO `team_project_auth_node` VALUES (13638, 4, 'project/login/_bindmail'
 INSERT INTO `team_project_auth_node` VALUES (13639, 4, 'project/login/_bindmobile');
 INSERT INTO `team_project_auth_node` VALUES (13640, 4, 'project/menu');
 INSERT INTO `team_project_auth_node` VALUES (13641, 4, 'project/menu/menu');
-INSERT INTO `team_project_auth_node` VALUES (13642, 4, 'project/menu/menuadd');
-INSERT INTO `team_project_auth_node` VALUES (13643, 4, 'project/menu/menudel');
-INSERT INTO `team_project_auth_node` VALUES (13644, 4, 'project/menu/menuedit');
-INSERT INTO `team_project_auth_node` VALUES (13645, 4, 'project/menu/menuforbid');
-INSERT INTO `team_project_auth_node` VALUES (13646, 4, 'project/menu/menuresume');
+-- INSERT INTO `team_project_auth_node` VALUES (13642, 4, 'project/menu/menuadd');
+-- INSERT INTO `team_project_auth_node` VALUES (13643, 4, 'project/menu/menudel');
+-- INSERT INTO `team_project_auth_node` VALUES (13644, 4, 'project/menu/menuedit');
+-- INSERT INTO `team_project_auth_node` VALUES (13645, 4, 'project/menu/menuforbid');
+-- INSERT INTO `team_project_auth_node` VALUES (13646, 4, 'project/menu/menuresume');
 INSERT INTO `team_project_auth_node` VALUES (13647, 4, 'project/node');
 INSERT INTO `team_project_auth_node` VALUES (13648, 4, 'project/node/alllist');
-INSERT INTO `team_project_auth_node` VALUES (13649, 4, 'project/node/clear');
+-- INSERT INTO `team_project_auth_node` VALUES (13649, 4, 'project/node/clear');
 INSERT INTO `team_project_auth_node` VALUES (13650, 4, 'project/node/index');
-INSERT INTO `team_project_auth_node` VALUES (13651, 4, 'project/node/save');
+-- INSERT INTO `team_project_auth_node` VALUES (13651, 4, 'project/node/save');
 INSERT INTO `team_project_auth_node` VALUES (13652, 4, 'project/notify');
 INSERT INTO `team_project_auth_node` VALUES (13653, 4, 'project/notify/batchdel');
 INSERT INTO `team_project_auth_node` VALUES (13654, 4, 'project/notify/delete');
@@ -781,11 +781,11 @@ INSERT INTO `team_project_auth_node` VALUES (13656, 4, 'project/notify/noreads')
 INSERT INTO `team_project_auth_node` VALUES (13657, 4, 'project/notify/read');
 INSERT INTO `team_project_auth_node` VALUES (13658, 4, 'project/notify/setreadied');
 INSERT INTO `team_project_auth_node` VALUES (13659, 4, 'project/organization');
-INSERT INTO `team_project_auth_node` VALUES (13660, 4, 'project/organization/delete');
-INSERT INTO `team_project_auth_node` VALUES (13661, 4, 'project/organization/edit');
+-- INSERT INTO `team_project_auth_node` VALUES (13660, 4, 'project/organization/delete');
+-- INSERT INTO `team_project_auth_node` VALUES (13661, 4, 'project/organization/edit');
 INSERT INTO `team_project_auth_node` VALUES (13662, 4, 'project/organization/index');
 INSERT INTO `team_project_auth_node` VALUES (13663, 4, 'project/organization/read');
-INSERT INTO `team_project_auth_node` VALUES (13664, 4, 'project/organization/save');
+-- INSERT INTO `team_project_auth_node` VALUES (13664, 4, 'project/organization/save');
 INSERT INTO `team_project_auth_node` VALUES (13665, 4, 'project/organization/_getorglist');
 INSERT INTO `team_project_auth_node` VALUES (13666, 4, 'project/project');
 INSERT INTO `team_project_auth_node` VALUES (13667, 4, 'project/project/analysis');
@@ -798,7 +798,7 @@ INSERT INTO `team_project_auth_node` VALUES (13673, 4, 'project/project/read');
 INSERT INTO `team_project_auth_node` VALUES (13674, 4, 'project/project/recovery');
 INSERT INTO `team_project_auth_node` VALUES (13675, 4, 'project/project/recoveryarchive');
 INSERT INTO `team_project_auth_node` VALUES (13676, 4, 'project/project/recycle');
-INSERT INTO `team_project_auth_node` VALUES (13677, 4, 'project/project/save');
+-- INSERT INTO `team_project_auth_node` VALUES (13677, 4, 'project/project/save');
 INSERT INTO `team_project_auth_node` VALUES (13678, 4, 'project/project/selflist');
 INSERT INTO `team_project_auth_node` VALUES (13679, 4, 'project/project/uploadcover');
 INSERT INTO `team_project_auth_node` VALUES (13680, 4, 'project/project_collect');
