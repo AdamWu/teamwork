@@ -46,6 +46,24 @@ public class OrganizationService   extends ServiceImpl<OrganizationMapper, Organ
 
     @Transactional
     public MemberAccount createOrganization(Member member){
+        // edit by adamwu 20200909 - 导入用户不自动创建新组织
+        Integer defaultMemberAuthId = 4;//默认成员权限id
+        MemberAccount defaultMemberAccount = MemberAccount.builder().position(member.getPosition())
+                .department("")
+                .code(CommUtils.getUUID())
+                .member_code(member.getCode())
+                .organization_code(member.getOrgCode())
+                .is_owner(0).status(1)
+                .create_time(DateUtil.getCurrentDateTime())
+                .name(member.getName())
+                .email(member.getEmail())
+                .description(member.getDescription())
+                .mobile(member.getMobile())
+                .authorize(String.valueOf(defaultMemberAuthId))
+                .build();
+        memberAccountService.save(defaultMemberAccount);
+        return defaultMemberAccount;
+        /*
         Integer defaultAdminAuthId = 3;//默认管理员权限id
         Integer defaultMemberAuthId = 4;//默认成员权限id
         Organization organization = Organization.builder().name(member.getName()+"的个人项目")
@@ -107,6 +125,8 @@ public class OrganizationService   extends ServiceImpl<OrganizationMapper, Organ
         memberAccountService.save(defaultMemberAccount);
         memberAccountService.save(adminMemberAccount);
         return defaultMemberAccount;
+
+         */
     }
 
 }
