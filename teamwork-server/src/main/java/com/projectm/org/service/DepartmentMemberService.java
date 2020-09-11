@@ -12,6 +12,7 @@ import com.framework.common.utils.security.Md5Utils;
 import com.projectm.common.CommUtils;
 import com.projectm.common.DateUtil;
 import com.projectm.common.ListUtils;
+import com.projectm.common.ImageUtils;
 import com.projectm.config.MProjectConfig;
 import com.projectm.member.domain.Member;
 import com.projectm.member.domain.MemberAccount;
@@ -29,6 +30,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
@@ -128,6 +131,22 @@ public class DepartmentMemberService extends ServiceImpl<DepartmentMemberMapper,
                         member.setAvatar(downloadServer + downloadUrl);
                         member.setAccount(account);member.setStatus(1);
                         member.setOrgCode(orgCode);
+
+                        // 生成头像
+                    try {
+                        String filepath = MProjectConfig.getProfile()+"/member/avatar/"+ member.getCode();
+                        File dir = new File(filepath);
+                        if(!dir.exists())  dir.mkdirs();
+
+                        ImageUtils.generateImg(member.getName(), filepath, "default");
+
+                        String filename = "/member/avatar/"+ member.getCode() +"/default.jpg";
+                        downloadUrl = "/common/image?filePathName="+filename+"&realFileName=default.jpg";
+                        member.setAvatar(downloadServer + downloadUrl);
+                    }
+                    catch (IOException e) {
+                        throw new CustomException(e.getMessage());
+                    }
 
                         MemberAccount defaultMemberAccount = memberService.createMember(member);
 
