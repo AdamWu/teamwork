@@ -913,6 +913,10 @@ INSERT INTO `team_project_auth_node` VALUES (17004, 1, 'project/project/taskprio
 INSERT INTO `team_project_auth_node` VALUES (17005, 2, 'project/project/taskpriority');
 INSERT INTO `team_project_auth_node` VALUES (17006, 3, 'project/project/taskpriority');
 INSERT INTO `team_project_auth_node` VALUES (17007, 4, 'project/project/taskpriority');
+INSERT INTO `team_project_auth_node` VALUES (17008, 1, 'project/project_info/index');
+INSERT INTO `team_project_auth_node` VALUES (17009, 2, 'project/project_info/index');
+INSERT INTO `team_project_auth_node` VALUES (17010, 3, 'project/project_info/index');
+INSERT INTO `team_project_auth_node` VALUES (17011, 4, 'project/project_info/index');
 
 
 -- ----------------------------
