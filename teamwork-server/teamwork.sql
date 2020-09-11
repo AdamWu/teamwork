@@ -872,7 +872,7 @@ INSERT INTO `team_project_auth_node` VALUES (13747, 4, 'project/task_stages/inde
 INSERT INTO `team_project_auth_node` VALUES (13748, 4, 'project/task_stages/save');
 INSERT INTO `team_project_auth_node` VALUES (13749, 4, 'project/task_stages/sort');
 INSERT INTO `team_project_auth_node` VALUES (13750, 4, 'project/task_stages/tasks');
-INSERT INTO `team_project_auth_node` VALUES (13751, 4, 'project/task_stages/_getAll');
+INSERT INTO `team_project_auth_node` VALUES (13751, 4, 'project/task_stages/_getall');
 INSERT INTO `team_project_auth_node` VALUES (13752, 4, 'project/task_stages_template');
 INSERT INTO `team_project_auth_node` VALUES (13753, 4, 'project/task_stages_template/delete');
 INSERT INTO `team_project_auth_node` VALUES (13754, 4, 'project/task_stages_template/edit');
@@ -904,7 +904,16 @@ INSERT INTO `team_project_auth_node` VALUES (16707, 1, 'project/project_version/
 INSERT INTO `team_project_auth_node` VALUES (16708, 2, 'project/project_version/_getversionlog');
 INSERT INTO `team_project_auth_node` VALUES (16709, 3, 'project/project_version/_getversionlog');
 INSERT INTO `team_project_auth_node` VALUES (16710, 4, 'project/project_version/_getversionlog');
-INSERT INTO `team_project_auth_node` VALUES (16727, NULL, NULL);
+
+INSERT INTO `team_project_auth_node` VALUES (17000, 1, 'project/project/gettoplist');
+INSERT INTO `team_project_auth_node` VALUES (17001, 2, 'project/project/gettoplist');
+INSERT INTO `team_project_auth_node` VALUES (17002, 3, 'project/project/gettoplist');
+INSERT INTO `team_project_auth_node` VALUES (17003, 4, 'project/project/gettoplist');
+INSERT INTO `team_project_auth_node` VALUES (17004, 1, 'project/project/taskpriority');
+INSERT INTO `team_project_auth_node` VALUES (17005, 2, 'project/project/taskpriority');
+INSERT INTO `team_project_auth_node` VALUES (17006, 3, 'project/project/taskpriority');
+INSERT INTO `team_project_auth_node` VALUES (17007, 4, 'project/project/taskpriority');
+
 
 -- ----------------------------
 -- Table structure for team_project_collection
