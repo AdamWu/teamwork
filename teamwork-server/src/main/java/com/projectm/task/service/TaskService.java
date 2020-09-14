@@ -500,6 +500,13 @@ public class TaskService   extends ServiceImpl<TaskMapper, Task> {
         if(i>0){
             Map taskMap = baseMapper.selectTaskByCode(task.getCode());
             taskWorkflowService.queryRule(task.getProject_code(), task.getStage_code(), task.getCode(), null, 0);
+
+            // add by adamwu 20200914-新加task，不显示执行人信息
+            Map executorMap = new HashMap();
+            executorMap.put("name",member.getName());
+            executorMap.put("avatar",member.getAvatar());
+            taskMap.put("executor", executorMap);
+
             return AjaxResult.success(buildTaskMap(taskMap,task.getCreate_by()));
         }
         return AjaxResult.warn("保存失败！");
