@@ -131,7 +131,9 @@
             },
             // 设置内容(html)
             setHtml(text) {
-                this.editor.txt.html(text)
+                if (this.editor) {
+                    this.editor.txt.html(text)
+                }
             },
             // 追加内容(html)
             appendHtml(text) {
