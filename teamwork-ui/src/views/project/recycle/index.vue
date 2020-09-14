@@ -132,7 +132,7 @@
         .project-list {
             .ant-list-item-meta-avatar {
                 .ant-avatar {
-                    width: 50px;
+                    width: 100px;
                     height: 50px;
                     border-radius: 3px;
                 }
