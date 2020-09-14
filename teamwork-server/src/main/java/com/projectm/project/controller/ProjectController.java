@@ -102,6 +102,8 @@ public class ProjectController extends BaseController {
     @Value("${mproject.downloadServer}")
     private String downloadServer;
 
+    @Value("${mproject.projectImg}")
+    private String projectImg;
 
     /**
      * 登录系统后，请求的索引
@@ -831,6 +833,10 @@ public class ProjectController extends BaseController {
                 .organization_code(ServletUtils.getHeaderParam("organizationCode"))
                 .code(CommUtils.getUUID())
                 .task_board_theme("simple").build();
+
+        String downloadUrl = downloadServer+ "/common/image?filePathName="+ "/"+projectImg+"&realFileName="+projectImg;
+        project.setCover(downloadUrl);
+
         return AjaxResult.success(proService.saveProject(project));
     }
 
