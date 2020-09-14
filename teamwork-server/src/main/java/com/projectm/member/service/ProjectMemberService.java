@@ -97,7 +97,9 @@ public class ProjectMemberService extends ServiceImpl<ProjectMemberMapper, Proje
         lambdaQueryWrapper.eq(ProjectMember::getProject_code,project.getCode());
         lambdaQueryWrapper.eq(ProjectMember::getMember_code,memberCode);
         Integer result = baseMapper.delete(lambdaQueryWrapper);
+
         projectLogService.run(new HashMap(){{
+            put("project_code",project.getCode());
             put("member_code",memberCode);
             put("source_code",project.getCode());
             put("type","removeMember");
@@ -105,6 +107,7 @@ public class ProjectMemberService extends ServiceImpl<ProjectMemberMapper, Proje
             put("is_comment",0);
             put("content","");
         }});
+
         return result;
     }
 

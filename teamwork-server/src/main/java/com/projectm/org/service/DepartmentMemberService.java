@@ -132,7 +132,7 @@ public class DepartmentMemberService extends ServiceImpl<DepartmentMemberMapper,
                         member.setAccount(account);member.setStatus(1);
                         member.setOrgCode(orgCode);
 
-                        // 生成头像
+                        // 生成头像 edit by adamwu 20200914
                     try {
                         String filepath = MProjectConfig.getProfile()+"/member/avatar/"+ member.getCode();
                         File dir = new File(filepath);
