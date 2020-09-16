@@ -722,6 +722,33 @@ public class TaskController  extends BaseController {
         return AjaxResult.success();
     }
 
+    @PostMapping("/task_stages/sort")
+    @ResponseBody
+    public AjaxResult taskStagesSort(@RequestParam Map<String,Object> mmap)
+    {
+        String preCode = MapUtils.getString(mmap,"preCode");
+        String nextCode = MapUtils.getString(mmap,"nextCode");
+        String projectCode = MapUtils.getString(mmap,"projectCode");
+        TaskStage preStage = taskStageService.lambdaQuery().eq(TaskStage::getCode,preCode).one();
+        TaskStage nextStage = taskStageService.lambdaQuery().eq(TaskStage::getCode,nextCode).one();
+        if(ObjectUtils.isEmpty(preStage) || ObjectUtils.isEmpty(nextStage)){
+            return AjaxResult.warn("该列表已失效！");
+        }
+        Project project = projectService.lambdaQuery().eq(Project::getCode,projectCode).eq(Project::getDeleted,0).one();
+        if(ObjectUtils.isEmpty(project)){
+            return AjaxResult.warn("该项目已失效！");
+        }
+
+        int preSort = preStage.getSort();
+        int nextSort = nextStage.getSort();
+        preStage.setSort(nextSort);
+        nextStage.setSort(preSort);
+        taskStageService.updateById(preStage);
+        taskStageService.updateById(nextStage);
+
+        return AjaxResult.success();
+    }
+
     @PostMapping("/task/batchAssignTask")
     @ResponseBody
     public AjaxResult batchAssignTask(@RequestParam Map<String,Object> mmap)  throws Exception
