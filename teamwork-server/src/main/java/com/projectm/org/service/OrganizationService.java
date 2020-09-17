@@ -51,6 +51,7 @@ public class OrganizationService   extends ServiceImpl<OrganizationMapper, Organ
         MemberAccount defaultMemberAccount = MemberAccount.builder().position(member.getPosition())
                 .department("")
                 .code(CommUtils.getUUID())
+                .avatar(member.getAvatar())
                 .member_code(member.getCode())
                 .organization_code(member.getOrgCode())
                 .is_owner(0).status(1)
