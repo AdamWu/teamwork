@@ -6,7 +6,7 @@ function resolve(dir) {
 
 const HOST = '0.0.0.0';
 const PORT = '8045';
-//const DEV_URL = 'http://teamworkapi.mokingsoft.com';
+//const DEV_URL = 'http://192.168.1.21:8881';
 const DEV_URL = 'http://localhost:8881';
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
