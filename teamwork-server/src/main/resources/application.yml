@@ -29,7 +29,7 @@ mproject:
   projectImg: project.png
 
 
-  #downloadServer: http://120.27.62.173:8888
+  #downloadServer: http://192.168.1.21:8881
   downloadServer: http://127.0.0.1:8881
 
 # 开发环境配置
@@ -198,8 +198,8 @@ xss:
 jwt:
   header: Authorization
   secret: mySecret
-  #token有效期时间（分钟）
-  expiration: 120
+  #token有效期时间（分钟）- 7天
+  expiration: 10080
   tokenHead: "Bearer "
 
 #要放行的url
