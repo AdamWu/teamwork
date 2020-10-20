@@ -525,7 +525,7 @@
 
                 .ant-card-meta-description {
                     color: rgba(0, 0, 0, 0.45);
-                    height: 44px;
+                    height: 64px;
                     line-height: 22px;
                     overflow: hidden;
                 }
