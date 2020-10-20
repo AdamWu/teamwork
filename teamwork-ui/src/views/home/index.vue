@@ -494,7 +494,11 @@
                     line-height: 22px;
                     overflow: hidden;
                     .description-text{
+                        display:block; 
                         height: 22px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow:ellipsis;
                     }
                 }
 
@@ -525,7 +529,7 @@
 
                 .ant-card-meta-description {
                     color: rgba(0, 0, 0, 0.45);
-                    height: 64px;
+                    height: 44px;
                     line-height: 22px;
                     overflow: hidden;
                 }
