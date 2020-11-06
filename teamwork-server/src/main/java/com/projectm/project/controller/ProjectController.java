@@ -552,6 +552,7 @@ public class ProjectController extends BaseController {
         }
 
         IPage<Map> iPage = Constant.createPage(mmap);
+        //iPage.setSize(5);
 
         Map params = new HashMap();
         params.put("memberCode",MapUtils.getString(loginMember,"memberCode"));
@@ -560,6 +561,8 @@ public class ProjectController extends BaseController {
 
 
         iPage = proService.getMemberProjects(iPage,params);
+        System.out.println("总页数"+iPage.getPages());
+        System.out.println("总记录数"+iPage.getTotal());
 
         List<Map> resultList = new ArrayList<>();
         List<Map> records = iPage.getRecords();

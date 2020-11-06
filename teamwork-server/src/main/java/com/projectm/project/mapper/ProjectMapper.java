@@ -62,15 +62,16 @@ public interface ProjectMapper extends BaseMapper<Project> {
             "SELECT p.id,p.cover,p.name,p.code,p.description,p.access_control_type,p.white_list,p.order,p.deleted,p.template_code,p.schedule,p.create_time,p.organization_code,p.deleted_time,p.private privated,p.prefix,p.open_prefix,p.archive,p.archive_time,p.open_begin_time,p.open_task_private,p.task_board_theme,p.begin_time,p.end_time,p.auto_update_schedule,",
             "pm.member_code FROM team_project AS p JOIN team_project_member AS pm ON p.CODE = pm.project_code LEFT JOIN team_project_collection AS pc ON p.CODE = pc.project_code  ",
             " WHERE ",
-            " pm.member_code = #{params.memberCode} AND p.organization_code = #{params.orgCode} " ,
+            " pm.member_code = #{params.memberCode} AND p.organization_code = #{params.orgCode} AND pc.member_code = #{params.memberCode}" ,
             "<if test='params.deleted!=-1 '>",
             "AND p.deleted <![CDATA[ = ]]> #{params.deleted}",
             "</if>",
             "<if test='params.archive!=-1 '>",
             "AND p.archive <![CDATA[ = ]]> #{params.archive}",
             "</if>",
-            " ORDER BY pc.id DESC,p.id DESC",
-            "</script>"})
+            " ORDER BY p.name DESC",
+            "</script>"
+    })
     IPage<Map> selectMemberProjects(IPage<Map> page,@Param("params") Map params);
 
     //@Select("select pp.code from team_project as pp join team_project_member as pm on pm.project_code = pp.code where pp.organization_code = #{params.orgCode} and (pm.member_code = #{params.memberCode}) and pp.deleted = 0 group by pp.`code`")
